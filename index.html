@@ -1,3123 +1,640 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bakso Seger Boyolali — Bakso Urat &amp; Mie Ayam Sejak 2021</title>
-<meta name="description" content="Bakso Seger Boyolali — bakso urat dan mie ayam racikan rumah produksi sendiri, melayani cabang Ciater, Ciputat, dan Pengasinan.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bakso Seger Boyolali – Bakso Enak di Ciputat, Ciater, Pengasinan</title>
+<meta name="description" content="Bakso Seger Boyolali hadir di Ciater, Ciputat, dan Pengasinan. Lihat menu, jam buka, rute Google Maps, lalu pesan lewat WhatsApp.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://baksosegerboyolali.com/">
+<meta name="theme-color" content="#0E4A3A">
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Bakso Seger Boyolali">
+<meta property="og:title" content="Bakso Seger Boyolali – Kuah hangat, rasa bikin balik lagi">
+<meta property="og:description" content="Bakso enak di Ciputat, Ciater, dan Pengasinan. Pesan lewat WhatsApp, dibalas langsung oleh admin.">
+<meta property="og:url" content="https://baksosegerboyolali.com/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E4A3A'/%3E%3Ccircle cx='32' cy='30' r='14' fill='%23F4F5EF'/%3E%3Cpath d='M12 34h40c0 12-9 20-20 20S12 46 12 34z' fill='%23D6291F'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Zilla+Slab:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-<!--
-  =========================================================================
-  CATATAN UNTUK PEMILIK / PENGELOLA SEBELUM DEPLOY
-  Cari kata "GANTI:" di seluruh file ini untuk menemukan semua data yang
-  masih berupa contoh dan wajib diisi dengan data asli sebelum situs
-  dipublikasikan:
-    1. Alamat & jam operasional tiap cabang (bagian #cabang)
-    2. Nomor WhatsApp (bagian #kontak & tombol mengambang)
-    3. Harga menu (bagian #menu)
-    4. Tautan ulasan Google asli — ganti QR di bagian #ulasan setelah
-       Profil Bisnis Google diklaim (dapatkan link pendek di
-       business.google.com lalu generate ulang QR-nya)
-    5. Foto asli pada bagian #galeri (saat ini berupa panel bertekstur,
-       bukan foto sungguhan, supaya tidak terlihat seperti foto stok)
-  =========================================================================
--->
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Figtree:wght@400;500;600;700&display=swap">
 <style>
-  :root{
-    --ink:#211815;
-    --ink-soft:#3a2c24;
-    --paper:#f3ead9;
-    --paper-dim:#e9dcc3;
-    --chili:#a62b1f;
-    --chili-dark:#7e1f16;
-    --turmeric:#dd9a2e;
-    --broth:#5c4530;
-    --line: rgba(33,24,21,0.16);
-    --line-on-dark: rgba(243,234,217,0.22);
-    --radius: 3px;
-    --maxw: 1180px;
-  }
+:root{
+  --ink:#1B1A17; --ink2:#4B4A44; --paper:#F4F5EF; --white:#FFFFFF;
+  --green:#0E4A3A; --green-d:#08302A; --sambal:#D6291F; --sambal-d:#A81E16; --kuah:#E6A03A; --line:#D5DACB;
+  --display:'Alfa Slab One', 'Rockwell', Georgia, serif;
+  --body:'Figtree', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --gutter:clamp(18px,5vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:var(--body);font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--sambal);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{top:12px}
+.wrap{width:min(1180px,100% - 2*var(--gutter));margin-inline:auto}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;letter-spacing:.2px}
+h2{font-size:clamp(2.1rem,5vw,3.6rem);color:var(--green)}
+h3{font-size:1.5rem}
+.lead{font-size:1.2rem;color:var(--ink2);max-width:46ch}
+section{padding-block:clamp(64px,9vw,120px)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;border:3px solid var(--ink);font-weight:700;text-decoration:none;background:var(--white);color:var(--ink);transition:transform .15s, box-shadow .15s;box-shadow:0 4px 0 var(--ink)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--ink)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+.btn.red{background:var(--sambal);color:#fff}
+.btn.green{background:var(--green);color:#fff}
+.btn.small{padding:8px 16px;font-size:.95rem;box-shadow:0 3px 0 var(--ink)}
+.btn svg{width:22px;height:22px;flex:none}
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
-  }
+/* header */
+header.top{position:sticky;top:0;z-index:50;background:rgba(244,245,239,.94);backdrop-filter:blur(8px);border-bottom:2px solid var(--ink)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.logo{font-family:var(--display);font-size:1.35rem;color:var(--green);text-decoration:none;line-height:1}
+.logo span{color:var(--sambal)}
+nav.main{display:flex;align-items:center;gap:26px}
+nav.main a{text-decoration:none;font-weight:600}
+nav.main a:not(.btn):hover,nav.main a.on{color:var(--sambal)}
+.burger{display:none;background:none;border:3px solid var(--ink);border-radius:10px;width:48px;height:44px;align-items:center;justify-content:center}
+.burger i{display:block;width:20px;height:3px;background:var(--ink);position:relative}
+.burger i::before,.burger i::after{content:"";position:absolute;left:0;width:20px;height:3px;background:var(--ink)}
+.burger i::before{top:-7px}.burger i::after{top:7px}
+@media(max-width:860px){
+  .burger{display:flex}
+  nav.main{position:absolute;left:0;right:0;top:100%;background:var(--paper);flex-direction:column;align-items:stretch;gap:0;padding:8px var(--gutter) 20px;border-bottom:2px solid var(--ink);display:none}
+  nav.main.open{display:flex}
+  nav.main a{padding:14px 0;border-bottom:1px solid var(--line)}
+  nav.main a.btn{margin-top:14px;justify-content:center;border-bottom:3px solid var(--ink)}
+}
 
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:'Zilla Slab', Georgia, serif;
-    font-size:17px;
-    line-height:1.6;
-    -webkit-font-smoothing:antialiased;
-  }
+/* hero */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(56px,8vw,110px);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,64px);align-items:center}
+.hero h1{font-size:clamp(3.1rem,9.2vw,7.6rem);color:var(--green);letter-spacing:-1px;margin-bottom:22px}
+.hero h1 em{font-style:normal;color:var(--sambal);display:block}
+.hero .lead{margin-bottom:30px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:16px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-weight:600;color:var(--ink2);list-style:none}
+.hero .facts li{display:flex;align-items:center;gap:8px}
+.hero .facts li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--kuah);border:2px solid var(--ink)}
+.bowl-wrap{position:relative;display:grid;place-items:center}
+.bowl-wrap::before{content:"";position:absolute;inset:6% 2% 2% 2%;background:var(--kuah);border:4px solid var(--ink);border-radius:46% 54% 50% 50%/52% 46% 54% 48%}
+.bowl{position:relative;width:min(100%,520px)}
+.steam path{fill:none;stroke:var(--white);stroke-width:9;stroke-linecap:round;opacity:0;animation:steam 3.6s ease-in infinite}
+.steam path:nth-child(2){animation-delay:1.2s}.steam path:nth-child(3){animation-delay:2.2s}
+@keyframes steam{0%{opacity:0;transform:translateY(24px)}25%{opacity:.95}100%{opacity:0;transform:translateY(-30px)}}
+.sticker{position:absolute;right:2%;bottom:6%;background:var(--sambal);color:#fff;border:3px solid var(--ink);padding:10px 16px;border-radius:14px;font-weight:700;transform:rotate(-6deg);max-width:210px;line-height:1.25;box-shadow:0 4px 0 var(--ink);font-size:.98rem}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}.bowl-wrap{order:-1;max-width:420px;margin-inline:auto}}
 
-  h1,h2,h3,.display{
-    font-family:'Staatliches', 'Arial Narrow', sans-serif;
-    font-weight:400;
-    letter-spacing:0.02em;
-    text-transform:uppercase;
-    line-height:1.02;
-    margin:0;
-  }
+/* menu */
+#menu{background:var(--white);border-block:2px solid var(--ink)}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:36px}
+.tabs{display:flex;flex-wrap:wrap;gap:10px}
+.tab{padding:9px 20px;border-radius:999px;border:2px solid var(--ink);background:var(--paper);font-weight:700}
+.tab[aria-selected="true"]{background:var(--ink);color:#fff}
+.menu-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(24px,5vw,72px)}
+@media(max-width:860px){.menu-list{grid-template-columns:1fr}}
+.item{display:grid;grid-template-columns:1fr auto;gap:2px 16px;align-items:center;padding:18px 0;border-bottom:2px dotted var(--ink)}
+.item h3{font-family:var(--body);font-weight:700;font-size:1.2rem;line-height:1.3}
+.item p{grid-column:1;color:var(--ink2);font-size:1rem;line-height:1.45}
+.item .price{font-weight:700;color:var(--sambal)}
+.item .act{grid-row:1 / span 2;grid-column:2;display:flex;align-items:center;gap:8px}
+.step{display:inline-flex;align-items:center;border:2px solid var(--ink);border-radius:999px;overflow:hidden;background:var(--paper)}
+.step button{width:40px;height:40px;border:0;background:none;font-size:1.3rem;font-weight:700}
+.step button:hover{background:var(--kuah)}
+.step output{min-width:28px;text-align:center;font-weight:700}
+.note{margin-top:28px;color:var(--ink2);font-size:1rem}
 
-  .mono{
-    font-family:'Space Mono', 'Courier New', monospace;
-  }
+/* cara pesan */
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px;counter-reset:s}
+.steps li{counter-increment:s;padding:8px 32px 8px 0;position:relative}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;font-family:var(--display);font-size:1.6rem;margin-bottom:16px;border:3px solid var(--ink)}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:68px;right:16px;top:36px;border-top:3px dashed var(--ink)}
+.steps h3{font-family:var(--body);font-weight:700;font-size:1.25rem;margin-bottom:6px}
+.steps p{color:var(--ink2)}
+@media(max-width:860px){.steps{grid-template-columns:1fr;gap:28px}.steps li:not(:last-child)::after{display:none}}
 
-  a{color:inherit;}
-  img{max-width:100%;display:block;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 28px;}
+/* cabang */
+#cabang{background:var(--green);color:#fff}
+#cabang h2{color:#fff}
+.branch-tabs{display:flex;flex-wrap:wrap;gap:6px 36px;margin:30px 0 34px}
+.branch-tabs button{background:none;border:0;font-family:var(--display);font-size:clamp(2rem,6vw,4.4rem);line-height:1;color:rgba(255,255,255,.38);padding:2px 0;transition:color .2s}
+.branch-tabs button:hover{color:rgba(255,255,255,.75)}
+.branch-tabs button[aria-selected="true"]{color:var(--kuah)}
+.branch-body{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(20px,4vw,56px)}
+@media(max-width:860px){.branch-body{grid-template-columns:1fr}}
+.info dl{display:grid;gap:18px}
+.info dt{font-weight:700;color:var(--kuah)}
+.info dd{font-size:1.1rem}
+.info .acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.map{border:3px solid var(--ink);border-radius:18px;overflow:hidden;background:#cfd8cf;min-height:340px;box-shadow:0 6px 0 var(--ink)}
+.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+.todo{outline:2px dashed var(--kuah);outline-offset:4px;border-radius:4px}
 
-  /* ---------- utility: dotted price-list leader ---------- */
-  .leader{
-    flex:1;
-    border-bottom:2px dotted var(--broth);
-    margin:0 10px 6px;
-    opacity:0.55;
-  }
+/* tentang */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,80px);align-items:start}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+.about p+p{margin-top:16px}
+.about .big{font-family:var(--display);font-size:clamp(1.6rem,3.2vw,2.4rem);line-height:1.2;color:var(--sambal)}
+.values{list-style:none;margin-top:26px;display:grid;gap:14px}
+.values li{padding-left:34px;position:relative}
+.values li::before{content:"";position:absolute;left:0;top:.45em;width:18px;height:18px;border-radius:50%;background:var(--kuah);border:3px solid var(--ink)}
+.values b{display:block}
 
-  /* ================= NAV ================= */
-  .nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(243,234,217,0.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    max-width:var(--maxw); margin:0 auto; padding:14px 28px;
-    display:flex; align-items:center; justify-content:space-between;
-  }
-  .brand{
-    display:flex; align-items:center; gap:10px;
-    font-family:'Staatliches', sans-serif;
-    font-size:22px; letter-spacing:0.03em;
-    text-decoration:none; color:var(--ink);
-  }
-  .brand .mark{
-    width:34px;height:34px;flex:0 0 auto;
-  }
-  .nav-links{
-    display:flex; gap:28px; list-style:none; margin:0; padding:0;
-  }
-  .nav-links a{
-    text-decoration:none;
-    font-family:'Space Mono', monospace;
-    font-size:12.5px;
-    letter-spacing:0.06em;
-    text-transform:uppercase;
-    color:var(--broth);
-    padding-bottom:3px;
-    border-bottom:2px solid transparent;
-    transition:border-color .18s ease, color .18s ease;
-  }
-  .nav-links a:hover{ color:var(--chili); border-color:var(--chili); }
-  .nav-cta{
-    font-family:'Space Mono', monospace;
-    font-size:12px; letter-spacing:.05em; text-transform:uppercase;
-    background:var(--chili); color:var(--paper);
-    padding:9px 16px; text-decoration:none; border-radius:var(--radius);
-    white-space:nowrap;
-  }
-  .nav-toggle{ display:none; }
+/* ulasan */
+#ulasan{background:var(--green-d);color:#fff}
+#ulasan h2{color:var(--kuah)}
+#ulasan .lead{color:#D8E3DC}
+.qr-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,4vw,48px);margin-top:36px;max-width:760px}
+@media(max-width:560px){.qr-grid{grid-template-columns:1fr}}
+.qr{background:var(--white);color:var(--ink);padding:22px 22px 20px;border-radius:6px;text-align:center;position:relative;border:3px solid var(--ink);box-shadow:0 6px 0 rgba(0,0,0,.45)}
+.qr .code{width:100%;aspect-ratio:1;display:grid;place-items:center}
+.qr .code svg,.qr .code img{width:100%;height:100%}
+.qr p{font-weight:700;margin-top:12px}
+.qr a{font-size:.95rem;color:var(--sambal-d)}
+#ulasan .branch-tabs{margin:26px 0 0}
+#ulasan .branch-tabs button{font-size:clamp(1.3rem,3vw,1.9rem);color:rgba(255,255,255,.45)}
+#ulasan .branch-tabs button[aria-selected="true"]{color:var(--kuah)}
 
-  @media (max-width:860px){
-    .nav-links{ display:none; }
-    .nav-toggle{
-      display:flex; flex-direction:column; gap:4px; background:none; border:0; cursor:pointer; padding:6px;
-    }
-    .nav-toggle span{ width:22px; height:2px; background:var(--ink); }
-    .nav-cta{ display:none; }
-  }
+/* artikel */
+.article{max-width:70ch;margin-inline:auto}
+.article h2{margin-bottom:22px}
+.article h3{font-family:var(--body);font-weight:700;font-size:1.4rem;margin:34px 0 10px;color:var(--green)}
+.article p{margin-bottom:16px}
+.article ol{margin:0 0 18px 1.3em}
+.article li{margin-bottom:8px;padding-left:4px}
+.article .meta{color:var(--ink2);font-size:1rem;margin-bottom:26px}
+.article .blog{margin-top:30px}
+#artikel{background:var(--white);border-block:2px solid var(--ink)}
 
-  /* ================= HERO ================= */
-  .hero{
-    position:relative;
-    padding:76px 0 60px;
-    overflow:hidden;
-    border-bottom:1px solid var(--line);
-  }
-  .hero-grid{
-    display:grid; grid-template-columns: 1.15fr 0.85fr; gap:40px; align-items:center;
-  }
-  .eyebrow{
-    font-family:'Space Mono', monospace; font-size:12.5px; letter-spacing:.14em;
-    text-transform:uppercase; color:var(--chili); margin-bottom:14px;
-    display:flex; align-items:center; gap:10px;
-  }
-  .eyebrow::before{
-    content:""; width:26px; height:2px; background:var(--chili); display:inline-block;
-  }
-  .hero h1{
-    font-size:clamp(44px, 7vw, 82px);
-    color:var(--ink);
-  }
-  .hero h1 em{
-    font-style:normal; color:var(--chili);
-  }
-  .hero-sub{
-    max-width:46ch; margin:22px 0 30px;
-    color:var(--ink-soft); font-size:18px;
-  }
-  .hero-actions{ display:flex; gap:14px; flex-wrap:wrap; }
-  .btn{
-    display:inline-flex; align-items:center; gap:8px;
-    font-family:'Space Mono', monospace; font-size:13px; letter-spacing:.05em; text-transform:uppercase;
-    padding:13px 22px; text-decoration:none; border-radius:var(--radius);
-    border:1.5px solid var(--ink);
-  }
-  .btn-solid{ background:var(--ink); color:var(--paper); }
-  .btn-solid:hover{ background:var(--chili-dark); border-color:var(--chili-dark); }
-  .btn-outline{ background:transparent; color:var(--ink); }
-  .btn-outline:hover{ background:var(--ink); color:var(--paper); }
+/* faq */
+.faq{max-width:820px}
+.faq details{border-bottom:2px solid var(--ink)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 40px 20px 0;font-weight:700;font-size:1.2rem;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font-size:1.8rem;transition:transform .2s}
+.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+.faq details p{padding:0 0 22px;color:var(--ink2);max-width:62ch}
 
-  .hero-stats{
-    display:flex; gap:26px; margin-top:44px; flex-wrap:wrap;
-  }
-  .hero-stats div{ min-width:110px; }
-  .hero-stats .num{
-    font-family:'Staatliches', sans-serif; font-size:34px; color:var(--chili); line-height:1;
-  }
-  .hero-stats .lbl{
-    font-family:'Space Mono', monospace; font-size:11.5px; letter-spacing:.05em; color:var(--broth); margin-top:4px;
-  }
+/* footer */
+footer{background:var(--ink);color:#E9EAE2;padding-block:56px 110px}
+footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
+@media(max-width:860px){footer .cols{grid-template-columns:1fr}}
+footer h2{font-size:1.9rem;color:#fff;margin-bottom:10px}
+footer h3{font-family:var(--body);font-weight:700;font-size:1.05rem;color:var(--kuah);margin-bottom:10px}
+footer address{font-style:normal;display:grid;gap:12px}
+footer a{color:#fff}
+footer .legal{margin-top:40px;padding-top:20px;border-top:1px solid #4a4a44;color:#B9BAB1;font-size:.95rem}
 
-  /* -- hero visual: steaming bowl mark, hand-drawn style -- */
-  .hero-visual{
-    position:relative;
-    aspect-ratio:1/1;
-    display:flex; align-items:center; justify-content:center;
-  }
-  .bowl-badge{
-    width:min(360px, 90%);
-  }
-  .steam-line{
-    transform-origin:bottom center;
-    animation:steam 4.5s ease-in-out infinite;
-  }
-  .steam-line:nth-child(2){ animation-delay:.6s; }
-  .steam-line:nth-child(3){ animation-delay:1.2s; }
-  @keyframes steam{
-    0%{ opacity:0; transform:translateY(6px) scaleY(0.9); }
-    30%{ opacity:.55; }
-    75%{ opacity:0; transform:translateY(-26px) scaleY(1.15); }
-    100%{ opacity:0; }
-  }
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:62px;height:62px;border-radius:50%;background:#25D366;border:3px solid var(--ink);display:grid;place-items:center;box-shadow:0 4px 0 var(--ink);transition:transform .15s}
+.fab:hover{transform:translateY(-3px)}
+.fab svg{width:32px;height:32px}
+.cartbar{position:fixed;left:50%;transform:translate(-50%,140%);bottom:18px;z-index:60;width:min(560px,100% - 120px);display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--ink);color:#fff;border-radius:999px;padding:8px 8px 8px 24px;transition:transform .3s cubic-bezier(.2,.9,.3,1.2),visibility .3s;border:3px solid #fff;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.cartbar{visibility:hidden}.cartbar.show{transform:translate(-50%,0);visibility:visible}
+.cartbar b{font-size:1.05rem}
+@media(max-width:560px){.cartbar{left:18px;transform:translateY(140%);width:calc(100% - 100px)}.cartbar.show{transform:none}}
 
-  /* ================= SECTION HEADERS ================= */
-  section{ padding:84px 0; }
-  .sec-head{
-    display:flex; justify-content:space-between; align-items:flex-end; gap:30px;
-    margin-bottom:44px; flex-wrap:wrap;
-    border-bottom:2px solid var(--ink); padding-bottom:18px;
-  }
-  .sec-head .tag{
-    font-family:'Space Mono', monospace; font-size:12px; letter-spacing:.14em;
-    text-transform:uppercase; color:var(--chili); display:block; margin-bottom:8px;
-  }
-  .sec-head h2{ font-size:clamp(32px,4.2vw,52px); }
-  .sec-head p{ max-width:40ch; color:var(--broth); font-size:15.5px; margin:0; }
+/* dialog */
+dialog{margin:auto;border:3px solid var(--ink);border-radius:20px;padding:0;width:min(560px,100% - 28px);max-height:calc(100dvh - 28px);background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(8,48,42,.7)}
+.dlg{padding:26px;overflow:auto;max-height:calc(100dvh - 34px)}
+.dlg h2{font-size:2rem;margin-bottom:6px}
+.dlg .close{position:absolute;right:14px;top:14px;border:2px solid var(--ink);border-radius:50%;width:40px;height:40px;background:#fff;font-size:1.3rem;line-height:1}
+.cart-lines{list-style:none;margin:14px 0 20px;border-top:2px solid var(--ink)}
+.cart-lines li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dotted var(--ink)}
+.empty{padding:14px 0;color:var(--ink2)}
+.field{display:grid;gap:6px;margin-bottom:14px}
+.field label{font-weight:700}
+.field input,.field select,.field textarea{font:inherit;padding:12px 14px;border:2px solid var(--ink);border-radius:12px;background:#fff;width:100%}
+.dlg .btn{width:100%;justify-content:center}
+.err{color:var(--sambal-d);font-weight:600;min-height:1.4em;margin-bottom:8px}
 
-  .on-dark{ background:var(--ink); color:var(--paper); }
-  .on-dark .sec-head{ border-bottom-color:var(--paper); }
-  .on-dark .sec-head p{ color:rgba(243,234,217,0.72); }
-
-  /* ================= PROFIL ================= */
-  .profil-grid{
-    display:grid; grid-template-columns: 0.95fr 1.05fr; gap:56px; align-items:start;
-  }
-  .profil-lede{
-    font-family:'Zilla Slab', serif; font-size:21px; line-height:1.55; color:var(--ink);
-  }
-  .profil-lede strong{ color:var(--chili); }
-  .profil-body p{ color:var(--ink-soft); }
-
-  .timeline{ margin-top:36px; }
-  .tl-row{
-    display:grid; grid-template-columns:88px 1fr; gap:18px;
-    padding:16px 0; border-top:1px solid var(--line);
-  }
-  .tl-row:last-child{ border-bottom:1px solid var(--line); }
-  .tl-year{
-    font-family:'Staatliches', sans-serif; font-size:26px; color:var(--chili);
-  }
-  .tl-txt b{ display:block; font-family:'Space Mono',monospace; font-size:13px; letter-spacing:.04em; text-transform:uppercase; margin-bottom:3px; }
-  .tl-txt span{ color:var(--broth); font-size:15px; }
-
-  /* ================= MENU ================= */
-  .menu-tabs{
-    display:flex; gap:10px; margin-bottom:34px; flex-wrap:wrap;
-  }
-  .menu-tab{
-    font-family:'Space Mono', monospace; font-size:12.5px; letter-spacing:.05em; text-transform:uppercase;
-    padding:9px 16px; border:1.5px solid var(--ink); border-radius:999px; background:none; cursor:pointer; color:var(--ink);
-  }
-  .menu-tab.active{ background:var(--ink); color:var(--paper); }
-
-  .menu-cols{
-    display:grid; grid-template-columns:1fr 1fr; gap:0 60px;
-  }
-  .menu-group{ margin-bottom:8px; }
-  .menu-group-title{
-    font-family:'Space Mono', monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase;
-    color:var(--chili); margin-bottom:14px; padding-top:26px; border-top:1px solid var(--line);
-  }
-  .menu-group:first-child .menu-group-title{ border-top:0; padding-top:0; }
-  .menu-item{
-    display:flex; align-items:baseline; gap:0; padding:9px 0;
-  }
-  .menu-item .name{ font-size:16.5px; }
-  .menu-item .desc{ display:block; font-size:12.5px; color:var(--broth); opacity:.8; margin-top:2px; }
-  .menu-item .price{ font-family:'Space Mono',monospace; font-size:14.5px; white-space:nowrap; }
-  .menu-note{
-    margin-top:28px; font-size:13px; color:var(--broth); font-family:'Space Mono',monospace;
-  }
-  @media (max-width:760px){ .menu-cols{ grid-template-columns:1fr; } }
-
-  /* ================= RUTE DISTRIBUSI (signature) ================= */
-  .rute-wrap{
-    position:relative;
-    padding:60px 20px;
-  }
-  .rute-svg{ width:100%; height:auto; }
-  .rute-caption{
-    text-align:center; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.08em;
-    text-transform:uppercase; color:rgba(243,234,217,.6); margin-top:18px;
-  }
-
-  /* ================= CABANG ================= */
-  .cabang-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:0;
-    border:1px solid var(--line);
-  }
-  .cabang-card{
-    padding:32px 28px; border-right:1px solid var(--line);
-    position:relative;
-  }
-  .cabang-card:last-child{ border-right:0; }
-  .cabang-year{
-    font-family:'Space Mono',monospace; font-size:12px; color:var(--chili); letter-spacing:.06em;
-  }
-  .cabang-card h3{
-    font-size:30px; margin:8px 0 14px; text-transform:none; letter-spacing:0;
-    font-family:'Zilla Slab', serif; font-weight:700;
-  }
-  .cabang-meta{ font-size:14.5px; color:var(--ink-soft); margin-bottom:6px; display:flex; gap:9px; }
-  .cabang-meta svg{ flex:0 0 auto; margin-top:3px; }
-  .cabang-badge{
-    display:inline-block; margin-top:14px; font-family:'Space Mono',monospace; font-size:11px;
-    letter-spacing:.05em; text-transform:uppercase; border:1px solid var(--ink); border-radius:999px;
-    padding:4px 10px;
-  }
-  .cabang-card.fokus .cabang-badge{ background:var(--chili); border-color:var(--chili); color:var(--paper); }
-  @media (max-width:820px){
-    .cabang-grid{ grid-template-columns:1fr; }
-    .cabang-card{ border-right:0; border-bottom:1px solid var(--line); }
-  }
-
-  /* ================= GALERI ================= */
-  .galeri-grid{
-    display:grid; grid-template-columns:repeat(6,1fr); grid-auto-rows:120px; gap:8px;
-  }
-  .galeri-tile{
-    position:relative; overflow:hidden; border-radius:var(--radius);
-    display:flex; align-items:flex-end; padding:12px;
-    color:var(--paper);
-  }
-  .galeri-tile span{
-    font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.05em; text-transform:uppercase;
-    opacity:.85;
-  }
-  .galeri-tile.a{ grid-column:span 3; grid-row:span 2; background:repeating-linear-gradient(135deg, var(--chili), var(--chili) 14px, var(--chili-dark) 14px, var(--chili-dark) 28px); }
-  .galeri-tile.b{ grid-column:span 3; grid-row:span 1; background:repeating-linear-gradient(45deg, var(--broth), var(--broth) 12px, var(--ink-soft) 12px, var(--ink-soft) 24px); }
-  .galeri-tile.c{ grid-column:span 3; grid-row:span 1; background:repeating-linear-gradient(45deg, var(--turmeric), var(--turmeric) 12px, #b97c1f 12px, #b97c1f 24px); }
-  .galeri-tile.d{ grid-column:span 2; grid-row:span 1; background:repeating-linear-gradient(135deg, var(--ink), var(--ink) 12px, var(--ink-soft) 12px, var(--ink-soft) 24px); }
-  .galeri-tile.e{ grid-column:span 2; grid-row:span 1; background:repeating-linear-gradient(135deg, var(--chili-dark), var(--chili-dark) 12px, var(--chili) 12px, var(--chili) 24px); }
-  .galeri-tile.f{ grid-column:span 2; grid-row:span 1; background:repeating-linear-gradient(45deg, var(--broth), var(--broth) 12px, var(--turmeric) 12px, var(--turmeric) 24px); }
-  @media (max-width:760px){
-    .galeri-grid{ grid-template-columns:repeat(2,1fr); grid-auto-rows:110px; }
-    .galeri-tile.a{ grid-column:span 2; grid-row:span 2; }
-    .galeri-tile.b,.galeri-tile.c,.galeri-tile.d,.galeri-tile.e,.galeri-tile.f{ grid-column:span 1; }
-  }
-
-  /* ================= ULASAN / QR ================= */
-  .ulasan-grid{
-    display:grid; grid-template-columns:1fr auto; gap:50px; align-items:center;
-  }
-  .qr-card{
-    background:var(--paper); padding:22px; border-radius:var(--radius);
-    display:flex; flex-direction:column; align-items:center; gap:12px;
-    width:220px;
-  }
-  .qr-card img{ width:170px; height:170px; }
-  .qr-card .cap{ font-family:'Space Mono',monospace; font-size:11px; letter-spacing:.05em; text-align:center; color:var(--ink); text-transform:uppercase; }
-  .stars{ color:var(--turmeric); letter-spacing:3px; font-size:20px; margin-bottom:10px; }
-  .quote{ font-family:'Zilla Slab',serif; font-size:24px; line-height:1.5; max-width:36ch; }
-  .quote cite{ display:block; margin-top:16px; font-family:'Space Mono',monospace; font-size:12px; font-style:normal; opacity:.7; }
-  @media (max-width:760px){ .ulasan-grid{ grid-template-columns:1fr; } .qr-card{ margin:0 auto; } }
-
-  /* ================= KONTAK ================= */
-  .kontak-grid{
-    display:grid; grid-template-columns:0.9fr 1.1fr; gap:56px;
-  }
-  .kontak-list{ list-style:none; margin:0; padding:0; }
-  .kontak-list li{
-    display:flex; gap:14px; padding:16px 0; border-top:1px solid var(--line);
-  }
-  .kontak-list li:first-child{ border-top:0; }
-  .kontak-list svg{ flex:0 0 auto; margin-top:2px; }
-  .kontak-list b{ display:block; font-family:'Space Mono',monospace; font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--chili); margin-bottom:3px; }
-  .map-frame{
-    width:100%; height:100%; min-height:320px; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden;
-  }
-  .map-frame iframe{ width:100%; height:100%; min-height:320px; border:0; filter:grayscale(0.15) contrast(1.05); }
-
-  /* ================= FOOTER ================= */
-  footer{
-    background:var(--ink); color:rgba(243,234,217,.75);
-    padding:44px 0 26px;
-  }
-  .foot-top{
-    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;
-    padding-bottom:26px; border-bottom:1px solid var(--line-on-dark);
-  }
-  .foot-brand{ font-family:'Staatliches',sans-serif; font-size:24px; color:var(--paper); }
-  .foot-social{ display:flex; gap:16px; }
-  .foot-social a{ color:var(--paper); opacity:.8; }
-  .foot-social a:hover{ opacity:1; color:var(--turmeric); }
-  .foot-bottom{
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    padding-top:20px; font-family:'Space Mono',monospace; font-size:11.5px; letter-spacing:.03em;
-  }
-
-  /* ---------- floating whatsapp button ---------- */
-  .float-wa{
-    position:fixed; right:20px; bottom:20px; z-index:60;
-    width:54px; height:54px; border-radius:50%;
-    background:var(--chili); display:flex; align-items:center; justify-content:center;
-    box-shadow:0 8px 20px rgba(33,24,21,.28);
-    text-decoration:none;
-  }
-
-  /* ---------- reveal on scroll ---------- */
-  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease; }
-  .reveal.in{ opacity:1; transform:none; }
-
-  :focus-visible{ outline:2.5px solid var(--chili); outline-offset:3px; }
-
-  /* ================= RESPONSIVE: stack two-column grids ================= */
-  @media (max-width:900px){
-    .hero{ padding:52px 0 40px; }
-    .hero-grid{ grid-template-columns:1fr; gap:44px; }
-    .hero-visual{ order:-1; max-width:280px; margin:0 auto; }
-    .profil-grid{ grid-template-columns:1fr; gap:36px; }
-    .kontak-grid{ grid-template-columns:1fr; gap:34px; }
-    .ulasan-grid{ grid-template-columns:1fr; gap:34px; }
-    .rute-svg{ min-width:640px; }
-    .rute-wrap{ overflow-x:auto; padding:44px 0; }
-    section{ padding:56px 0; }
-  }
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .steam path{animation:none;opacity:.7}
+  .cartbar,.btn,.fab{transition:none}
+}
 </style>
 </head>
-<style>
-/* =========================================================
-   ADMIN APP + LOGIN — variables, resets, and component styles
-   scoped so they never collide with the public website design
-   above (public page keeps its own --ink/--chili/--paper vars).
-========================================================= */
-:root{
-    --primary:#8b2f24;
-    --primary-dark:#642019;
-    --cream:#f7f3ee;
-    --white:#ffffff;
-    --text:#292522;
-    --muted:#77716b;
-    --border:#e5ddd5;
-    --success:#247a52;
-    --warning:#b36b16;
-    --danger:#bd3b32;
-    --sidebar:#301410;
-}
-
-button,
-input,
-select,
-textarea{
-    font:inherit;
-}
-
-button{
-    cursor:pointer;
-}
-
-.hidden{
-    display:none !important;
-}
-
-#loginPage,
-#appPage{
-    font-family:Inter,Segoe UI,Arial,sans-serif;
-    color:var(--text);
-}
-
-#appPage{
-    background:var(--cream);
-}
-
-/* buttons + brand mark: scoped to admin/login/modal only */
-#loginPage .btn,
-#appPage .btn,
-#modal .btn{
-    border:none;
-    background:var(--primary);
-    color:white;
-    padding:11px 17px;
-    border-radius:9px;
-    font-weight:700;
-    transition:.2s;
-}
-
-#loginPage .btn:hover,
-#appPage .btn:hover,
-#modal .btn:hover{
-    background:var(--primary-dark);
-    transform:translateY(-1px);
-}
-
-#loginPage .btn-outline,
-#appPage .btn-outline,
-#modal .btn-outline{
-    background:white;
-    color:var(--text);
-    border:1px solid var(--border);
-    padding:10px 15px;
-    border-radius:9px;
-    font-weight:600;
-}
-
-#loginPage .btn-outline:hover,
-#appPage .btn-outline:hover,
-#modal .btn-outline:hover{
-    border-color:var(--primary);
-    color:var(--primary);
-}
-
-#loginPage .brand,
-#appPage .brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-    font-weight:800;
-}
-
-.logo{
-    width:40px;
-    height:40px;
-    border-radius:11px;
-    display:grid;
-    place-items:center;
-    background:var(--primary);
-    color:white;
-    font-size:13px;
-    font-weight:900;
-}
-
-.badge{
-    display:inline-flex;
-    padding:5px 9px;
-    border-radius:50px;
-    font-size:11px;
-    font-weight:800;
-}
-
-.badge-success{
-    color:var(--success);
-    background:#e6f4ed;
-}
-
-.badge-warning{
-    color:var(--warning);
-    background:#fff0d7;
-}
-
-.badge-info{
-    color:#326899;
-    background:#e9f1f8;
-}
-
-.badge-danger{
-    color:var(--danger);
-    background:#fde9e7;
-}
-
-.muted{
-    color:var(--muted);
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-}
-
-.card{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:15px;
-    padding:22px;
-    box-shadow:0 7px 25px #3b241510;
-}
-
-.year{
-    font-size:11px;
-    color:var(--primary);
-    font-weight:900;
-    letter-spacing:1px;
-}
-
-/* ---------- LOGIN ---------- */
-
-.login-page{
-    min-height:100vh;
-    background:
-        linear-gradient(
-            135deg,
-            #401511,
-            #8b3026
-        );
-    display:grid;
-    place-items:center;
-    padding:25px;
-}
-
-.login-card{
-    width:min(430px,100%);
-    background:white;
-    padding:32px;
-    border-radius:18px;
-    box-shadow:0 25px 70px #0005;
-}
-
-.login-card h1{
-    font-family:Georgia,serif;
-    margin-bottom:5px;
-}
-
-.form-group{
-    margin:15px 0;
-}
-
-.form-group label{
-    display:block;
-    font-size:13px;
-    font-weight:750;
-    margin-bottom:6px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    width:100%;
-    padding:11px 12px;
-    border:1px solid var(--border);
-    border-radius:9px;
-    outline:none;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    border-color:var(--primary);
-}
-
-.login-info{
-    background:#f8f4f0;
-    padding:11px;
-    border-radius:9px;
-    font-size:12px;
-    color:var(--muted);
-}
-
-/* ---------- ADMIN APP ---------- */
-
-.app-header{
-    height:70px;
-    background:white;
-    border-bottom:1px solid var(--border);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:0 22px;
-    position:sticky;
-    top:0;
-    z-index:15;
-}
-
-.app-layout{
-    display:grid;
-    grid-template-columns:230px 1fr;
-    min-height:calc(100vh - 70px);
-}
-
-.sidebar{
-    background:var(--sidebar);
-    color:#f5e8e2;
-    padding:17px;
-    position:sticky;
-    top:70px;
-    height:calc(100vh - 70px);
-}
-
-.sidebar-title{
-    font-size:11px;
-    letter-spacing:1.5px;
-    text-transform:uppercase;
-    color:#bca49c;
-    margin:10px;
-}
-
-.sidebar button{
-    width:100%;
-    border:none;
-    background:transparent;
-    color:#f5e8e2;
-    text-align:left;
-    padding:11px 12px;
-    border-radius:8px;
-    margin-bottom:4px;
-}
-
-.sidebar button:hover,
-.sidebar button.active{
-    background:#ffffff14;
-}
-
-.app-content{
-    padding:28px;
-    max-width:1400px;
-    width:100%;
-}
-
-.page-heading{
-    display:flex;
-    justify-content:space-between;
-    gap:15px;
-    align-items:flex-start;
-    margin-bottom:22px;
-}
-
-.page-heading h1{
-    font-family:Georgia,serif;
-    font-size:34px;
-    margin:0 0 5px;
-}
-
-.dashboard-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:14px;
-}
-
-.metric{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:18px;
-}
-
-.metric-number{
-    font-size:29px;
-    font-weight:850;
-    margin:6px 0;
-}
-
-.dashboard-two{
-    display:grid;
-    grid-template-columns:1.2fr .8fr;
-    gap:16px;
-    margin-top:16px;
-}
-
-.panel{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:14px;
-    padding:20px;
-}
-
-.stock-row{
-    padding:15px 0;
-    border-bottom:1px solid var(--border);
-}
-
-.stock-row:last-child{
-    border-bottom:none;
-}
-
-.stock-header{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:8px;
-}
-
-.progress{
-    height:7px;
-    background:#eee7e1;
-    border-radius:10px;
-    overflow:hidden;
-}
-
-.progress span{
-    display:block;
-    height:100%;
-    background:var(--primary);
-}
-
-.table-container{
-    background:white;
-    border:1px solid var(--border);
-    border-radius:14px;
-    overflow:auto;
-}
-
-#appPage table{
-    width:100%;
-    border-collapse:collapse;
-    min-width:700px;
-}
-
-#appPage th,
-#appPage td{
-    padding:13px 14px;
-    text-align:left;
-    border-bottom:1px solid var(--border);
-}
-
-#appPage th{
-    background:#fcfaf8;
-    color:#817971;
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:.6px;
-}
-
-.action{
-    border:1px solid var(--border);
-    background:white;
-    padding:7px 10px;
-    border-radius:7px;
-    font-weight:650;
-}
-
-.action-primary{
-    background:var(--primary);
-    border-color:var(--primary);
-    color:white;
-}
-
-/* ---------- MODAL / TOAST ---------- */
-
-.modal{
-    position:fixed;
-    inset:0;
-    background:#0008;
-    display:grid;
-    place-items:center;
-    padding:20px;
-    z-index:50;
-}
-
-.modal-box{
-    width:min(560px,100%);
-    background:white;
-    padding:25px;
-    border-radius:17px;
-}
-
-.modal-actions{
-    display:flex;
-    justify-content:flex-end;
-    gap:8px;
-    margin-top:20px;
-}
-
-.toast{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#29221f;
-    color:white;
-    padding:12px 16px;
-    border-radius:9px;
-    z-index:100;
-}
-
-/* ---------- RESPONSIVE ---------- */
-
-@media(max-width:850px){
-
-    .cards,
-    .dashboard-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .app-layout{
-        grid-template-columns:1fr;
-    }
-
-    .sidebar{
-        height:auto;
-        position:static;
-        display:flex;
-        overflow:auto;
-        gap:5px;
-    }
-
-    .sidebar button{
-        min-width:max-content;
-        width:auto;
-    }
-
-    .sidebar-title{
-        display:none;
-    }
-
-    .dashboard-two{
-        grid-template-columns:1fr;
-    }
-}
-
-@media(max-width:560px){
-
-    .cards,
-    .dashboard-grid{
-        grid-template-columns:1fr;
-    }
-
-    .app-content{
-        padding:18px;
-    }
-}
-</style>
 <body>
-<!-- ===================================================== -->
-<!-- WEBSITE PUBLIK                                         -->
-<!-- ===================================================== -->
-<div id="publicPage">
+<a class="skip" href="#konten">Lewati ke konten</a>
 
-
-<a href="#konten" class="sr-only" style="position:absolute; left:-9999px;">Lompat ke konten</a>
-
-<!-- ================= NAV ================= -->
-<header class="nav">
-  <div class="nav-inner">
-    <a href="#beranda" class="brand">
-      <svg class="mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <circle cx="20" cy="20" r="19" stroke="#211815" stroke-width="2"/>
-        <path d="M10 21c0 6 4.5 10 10 10s10-4 10-10" stroke="#211815" stroke-width="2" stroke-linecap="round"/>
-        <path d="M9 21h22" stroke="#211815" stroke-width="2" stroke-linecap="round"/>
-        <path d="M17 8c-1 2 1 3 0 5M20 7c-1 2 1 3 0 5M23 8c-1 2 1 3 0 5" stroke="#a62b1f" stroke-width="1.6" stroke-linecap="round"/>
-      </svg>
-      Bakso Seger Boyolali
-    </a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#profil">Profil</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#cabang">Cabang</a></li>
-        <li><a href="#galeri">Galeri</a></li>
-        <li><a href="#ulasan">Ulasan</a></li>
-        <li><a href="#kontak">Kontak</a></li>
-        <li><a href="#" onclick="showLogin(); return false;">Masuk Admin</a></li>
-      </ul>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#beranda" aria-label="Bakso Seger Boyolali, ke beranda">Bakso <span>Seger</span> Boyolali</a>
+    <button class="burger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="nav"><i></i></button>
+    <nav class="main" id="nav" aria-label="Navigasi utama">
+      <a href="#menu">Menu</a>
+      <a href="#cabang">Cabang</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#artikel">Artikel</a>
+      <a class="btn red small" href="#" data-wa>Pesan via WhatsApp</a>
     </nav>
-    <a class="nav-cta" href="#kontak">Pesan / Tanya</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </header>
 
 <main id="konten">
-
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="beranda">
-    <div class="wrap hero-grid">
-      <div class="reveal in">
-        <p class="eyebrow">Bakso urat &amp; mie ayam sejak 2021</p>
-        <h1>Semangkuk<br><em>seger</em>,<br>tiga cabang.</h1>
-        <p class="hero-sub">Diracik dari satu rumah produksi milik keluarga, dikirim segar setiap hari ke Ciater, Ciputat, dan Pengasinan — supaya kuah panasnya sampai ke mangkuk kamu tanpa basi rasa.</p>
-        <div class="hero-actions">
-          <a href="#menu" class="btn btn-solid">Lihat Menu</a>
-          <a href="#cabang" class="btn btn-outline">Cari Cabang Terdekat</a>
-        </div>
-        <div class="hero-stats">
-          <div><div class="num">03</div><div class="lbl">Cabang Aktif</div></div>
-          <div><div class="num">01</div><div class="lbl">Rumah Produksi</div></div>
-          <div><div class="num">2021</div><div class="lbl">Berdiri Sejak</div></div>
-        </div>
+<section class="hero" id="beranda" aria-labelledby="judul">
+  <div class="wrap">
+    <div>
+      <h1 id="judul">Bakso Seger <em>Boyolali</em></h1>
+      <p class="lead">Kuah hangat, rasa bikin balik lagi. Cari bakso enak di Ciputat, Ciater, atau Pengasinan? Pilih cabang terdekatmu, lalu pesan lewat WhatsApp.</p>
+      <div class="cta">
+        <a class="btn red" href="#" data-wa><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.800 1 1-3.700-.2-.4a9.800 9.800 0 0 1-1.500-5.200c0-5.400 4.400-9.800 9.900-9.800 2.600 0 5.100 1 6.900 2.900a9.700 9.700 0 0 1 2.900 6.900c0 5.400-4.400 9.900-9.800 9.900zm5.400-7.400c-.3-.1-1.800-.9-2-1-.3-.1-.5-.1-.7.100-.2.300-.8 1-.9 1.200-.2.200-.3.200-.6.100-.3-.1-1.200-.4-2.300-1.400-.9-.8-1.400-1.700-1.600-2-.2-.3 0-.5.100-.6l.4-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.1.200 2.100 3.200 5.100 4.500.7.300 1.300.5 1.700.6.700.2 1.400.2 1.900.1.600-.1 1.800-.7 2-1.400.3-.7.3-1.300.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg>Pesan via WhatsApp</a>
+        <a class="btn" href="#menu">Lihat menu</a>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <svg class="bowl-badge" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g class="steam-line"><path d="M120 90c-8 14 8 18 0 32" stroke="#a62b1f" stroke-width="4" stroke-linecap="round"/></g>
-          <g class="steam-line"><path d="M160 78c-8 14 8 18 0 32" stroke="#dd9a2e" stroke-width="4" stroke-linecap="round"/></g>
-          <g class="steam-line"><path d="M200 90c-8 14 8 18 0 32" stroke="#a62b1f" stroke-width="4" stroke-linecap="round"/></g>
-          <ellipse cx="160" cy="150" rx="118" ry="26" fill="#211815"/>
-          <path d="M42 150c0 55 53 100 118 100s118-45 118-100" fill="#f3ead9" stroke="#211815" stroke-width="4"/>
-          <ellipse cx="160" cy="150" rx="118" ry="26" fill="none" stroke="#211815" stroke-width="4"/>
-          <circle cx="120" cy="150" r="12" fill="#a62b1f"/>
-          <circle cx="160" cy="158" r="14" fill="#7e1f16"/>
-          <circle cx="196" cy="148" r="10" fill="#a62b1f"/>
-          <path d="M150 148c6 4 10 4 16 0" stroke="#dd9a2e" stroke-width="3" stroke-linecap="round"/>
-          <path d="M20 150c0 20 8 20 8 0" stroke="#211815" stroke-width="4" stroke-linecap="round"/>
-          <path d="M300 150c0 20-8 20-8 0" stroke="#211815" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-      </div>
+      <ul class="facts">
+        <li>3 cabang</li>
+        <li>Pesanan dibalas langsung oleh admin</li>
+        <li>Rute lewat Google Maps</li>
+      </ul>
     </div>
-  </section>
-
-  <!-- ================= PROFIL ================= -->
-  <section id="profil">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag">Profil Usaha</span>
-          <h2>Dari satu gerobak<br>ke tiga cabang</h2>
-        </div>
-        <p>Cerita singkat perjalanan Bakso Seger Boyolali membangun rumah produksi dan jaringan cabangnya.</p>
-      </div>
-
-      <div class="profil-grid">
-        <div class="reveal">
-          <p class="profil-lede">Bakso Seger Boyolali dimulai dari resep rumahan yang dijual di <strong>cabang Ciater</strong>, lalu berkembang menjadi usaha dengan satu rumah produksi terpusat yang memasok tiga cabang sekaligus.</p>
-          <div class="profil-body" style="margin-top:22px;">
-            <p>Semua bakso — mulai dari bakso urat, bakso halus, hingga bakso telur — dibuat setiap hari di satu rumah produksi, lalu dikirim segar ke masing-masing cabang sebelum jam buka. Racikan kaldu dan bumbu dijaga tetap sama di ketiga lokasi, supaya rasa yang kamu kenal di Ciater juga sama persis di Ciputat dan Pengasinan.</p>
-            <p>Usaha ini dikelola langsung oleh <strong>Afriant Ahmad Widayat</strong> beserta tim karyawan di setiap cabang, dengan <!-- GANTI: ceritakan nilai/keunikan usaha secara singkat -->kepercayaan pada bahan segar dan porsi yang pas sebagai prinsip utama sejak hari pertama buka.</p>
-          </div>
-        </div>
-
-        <div class="reveal">
-          <div class="timeline">
-            <div class="tl-row">
-              <div class="tl-year">2021</div>
-              <div class="tl-txt"><b>Cabang Ciater dibuka</b><span>Titik awal Bakso Seger Boyolali, tempat resep keluarga pertama kali dijual ke pelanggan.</span></div>
-            </div>
-            <div class="tl-row">
-              <div class="tl-year">2023</div>
-              <div class="tl-txt"><b>Cabang Ciputat dibuka</b><span>Cabang kedua sekaligus wajah utama Bakso Seger Boyolali saat ini.</span></div>
-            </div>
-            <div class="tl-row">
-              <div class="tl-year">2025</div>
-              <div class="tl-txt"><b>Cabang Pengasinan dibuka</b><span>Cabang terbaru, memperluas jangkauan sambil tetap dipasok dari satu rumah produksi.</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= MENU ================= -->
-  <section id="menu" style="background:var(--paper-dim);">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag">Menu</span>
-          <h2>Papan menu<br>hari ini</h2>
-        </div>
-        <p>Harga berlaku di seluruh cabang dan bisa berubah sewaktu-waktu mengikuti harga bahan baku.</p>
-      </div>
-
-      <div class="menu-cols reveal">
-        <div>
-          <div class="menu-group">
-            <div class="menu-group-title">Bakso</div>
-            <div class="menu-item"><span class="name">Bakso Urat</span><span class="leader"></span><span class="price">Rp18.000</span></div>
-            <div class="menu-item"><span class="name">Bakso Halus</span><span class="leader"></span><span class="price">Rp16.000</span></div>
-            <div class="menu-item"><span class="name">Bakso Telur</span><span class="leader"></span><span class="price">Rp20.000</span></div>
-            <div class="menu-item"><span class="name">Bakso Beranak <span class="desc">isi bakso kecil &amp; telur puyuh</span></span><span class="leader"></span><span class="price">Rp25.000</span></div>
-            <div class="menu-item"><span class="name">Bakso Komplit <span class="desc">urat, telur, tahu, pangsit</span></span><span class="leader"></span><span class="price">Rp27.000</span></div>
-          </div>
-          <div class="menu-group">
-            <div class="menu-group-title">Mie &amp; Pelengkap</div>
-            <div class="menu-item"><span class="name">Mie Ayam Bakso</span><span class="leader"></span><span class="price">Rp22.000</span></div>
-            <div class="menu-item"><span class="name">Pangsit Goreng <span class="desc">isi 5</span></span><span class="leader"></span><span class="price">Rp10.000</span></div>
-            <div class="menu-item"><span class="name">Tahu Bakso</span><span class="leader"></span><span class="price">Rp8.000</span></div>
-          </div>
-        </div>
-        <div>
-          <div class="menu-group">
-            <div class="menu-group-title">Minuman</div>
-            <div class="menu-item"><span class="name">Es Teh Manis</span><span class="leader"></span><span class="price">Rp5.000</span></div>
-            <div class="menu-item"><span class="name">Es Jeruk Peras</span><span class="leader"></span><span class="price">Rp8.000</span></div>
-            <div class="menu-item"><span class="name">Teh Tawar Panas</span><span class="leader"></span><span class="price">Rp3.000</span></div>
-          </div>
-          <div class="menu-group">
-            <div class="menu-group-title">Paket Bawa Pulang</div>
-            <div class="menu-item"><span class="name">Bakso Frozen <span class="desc">isi 20 butir</span></span><span class="leader"></span><span class="price">Rp45.000</span></div>
-            <div class="menu-item"><span class="name">Kuah Kaldu <span class="desc">1 liter</span></span><span class="leader"></span><span class="price">Rp15.000</span></div>
-          </div>
-          <p class="menu-note"><!-- GANTI: sesuaikan harga & item sesuai kondisi terbaru -->* Harga contoh — sesuaikan dengan daftar harga resmi sebelum situs dipublikasikan.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= RUTE DISTRIBUSI (signature element) ================= -->
-  <section class="on-dark" aria-labelledby="rute-title">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag" style="color:var(--turmeric);">Dari Dapur ke Mangkuk</span>
-          <h2 id="rute-title">Satu rumah produksi,<br>tiga cabang segar</h2>
-        </div>
-        <p>Bakso dimasak setiap pagi di rumah produksi lalu dikirim ke setiap cabang sebelum jam buka.</p>
-      </div>
-    </div>
-    <div class="wrap rute-wrap reveal">
-      <svg class="rute-svg" viewBox="0 0 900 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram rumah produksi terhubung ke cabang Ciater, Ciputat, dan Pengasinan">
-        <defs>
-          <marker id="dot" markerWidth="6" markerHeight="6" refX="3" refY="3"><circle cx="3" cy="3" r="2.4" fill="#dd9a2e"/></marker>
-        </defs>
-        <path d="M450 180 C 340 130, 260 90, 170 70" fill="none" stroke="#dd9a2e" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" marker-end="url(#dot)"/>
-        <path d="M450 180 C 400 240, 340 280, 220 290" fill="none" stroke="#dd9a2e" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" marker-end="url(#dot)"/>
-        <path d="M450 180 C 570 170, 660 140, 740 100" fill="none" stroke="#dd9a2e" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round" marker-end="url(#dot)"/>
-
-        <!-- rumah produksi -->
-        <g transform="translate(450,180)">
-          <circle r="46" fill="#a62b1f"/>
-          <circle r="46" fill="none" stroke="#f3ead9" stroke-width="1.5" opacity=".4"/>
-          <text text-anchor="middle" y="-4" fill="#f3ead9" font-family="Staatliches, sans-serif" font-size="13" letter-spacing="1">RUMAH</text>
-          <text text-anchor="middle" y="14" fill="#f3ead9" font-family="Staatliches, sans-serif" font-size="13" letter-spacing="1">PRODUKSI</text>
-        </g>
-
-        <!-- Ciater -->
-        <g transform="translate(150,58)">
-          <circle r="34" fill="#f3ead9"/>
-          <text text-anchor="middle" y="-2" fill="#211815" font-family="Zilla Slab, serif" font-weight="700" font-size="14">Ciater</text>
-          <text text-anchor="middle" y="14" fill="#211815" font-family="Space Mono, monospace" font-size="10">2021</text>
-        </g>
-
-        <!-- Ciputat -->
-        <g transform="translate(198,308)">
-          <circle r="38" fill="#f3ead9"/>
-          <text text-anchor="middle" y="-3" fill="#211815" font-family="Zilla Slab, serif" font-weight="700" font-size="15">Ciputat</text>
-          <text text-anchor="middle" y="15" fill="#211815" font-family="Space Mono, monospace" font-size="10">2023</text>
-        </g>
-
-        <!-- Pengasinan -->
-        <g transform="translate(760,84)">
-          <circle r="34" fill="#f3ead9"/>
-          <text text-anchor="middle" y="-2" fill="#211815" font-family="Zilla Slab, serif" font-weight="700" font-size="13">Pengasinan</text>
-          <text text-anchor="middle" y="14" fill="#211815" font-family="Space Mono, monospace" font-size="10">2025</text>
-        </g>
+    <div class="bowl-wrap">
+      <svg class="bowl" viewBox="0 0 480 430" role="img" aria-label="Semangkuk bakso dengan kuah hangat dan uap mengepul">
+        <defs><clipPath id="front"><path d="M50 200A190 34 0 0 0 430 200C430 320 350 390 240 390C130 390 50 320 50 200Z"/></clipPath></defs>
+        <ellipse cx="240" cy="408" rx="170" ry="14" fill="#1B1A17" opacity=".16"/>
+        <g class="steam"><path d="M170 130C146 104 190 88 166 56"/><path d="M240 120C214 90 266 72 240 38"/><path d="M310 130C286 104 330 88 306 56"/></g>
+        <ellipse cx="240" cy="200" rx="190" ry="34" fill="#fff" stroke="#1B1A17" stroke-width="4"/>
+        <ellipse cx="240" cy="202" rx="172" ry="27" fill="#B96A1D"/>
+        <ellipse cx="240" cy="204" rx="160" ry="21" fill="#E6A03A"/>
+        <g stroke="#1B1A17" stroke-width="4"><circle cx="182" cy="186" r="40" fill="#F4E6D2"/><circle cx="268" cy="178" r="45" fill="#F4E6D2"/><circle cx="336" cy="198" r="32" fill="#F4E6D2"/></g>
+        <g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".8"><path d="M160 172a26 26 0 0 1 18-14"/><path d="M244 160a28 28 0 0 1 20-12"/></g>
+        <g fill="#2E8B57" stroke="#1B1A17" stroke-width="2"><rect x="214" y="204" width="16" height="7" rx="3" transform="rotate(-18 222 207)"/><rect x="300" y="212" width="16" height="7" rx="3" transform="rotate(14 308 215)"/><rect x="150" y="212" width="16" height="7" rx="3" transform="rotate(8 158 215)"/></g>
+        <circle cx="236" cy="214" r="8" fill="#D6291F" stroke="#1B1A17" stroke-width="3"/>
+        <path d="M50 200A190 34 0 0 0 430 200C430 320 350 390 240 390C130 390 50 320 50 200Z" fill="#fff"/>
+        <g clip-path="url(#front)" fill="none"><path d="M40 246A200 38 0 0 0 440 246" stroke="#0E4A3A" stroke-width="22"/><path d="M40 276A200 38 0 0 0 440 276" stroke="#D6291F" stroke-width="7"/><path d="M40 222A200 38 0 0 0 440 222" stroke="#D6291F" stroke-width="7"/></g>
+        <path d="M50 200A190 34 0 0 0 430 200C430 320 350 390 240 390C130 390 50 320 50 200Z" fill="none" stroke="#1B1A17" stroke-width="4"/>
+        <path d="M180 388l8 20h104l8-20" fill="#fff" stroke="#1B1A17" stroke-width="4" stroke-linejoin="round"/>
       </svg>
-      <p class="rute-caption">Cabang Ciputat ditandai lebih besar sebagai lokasi utama saat ini</p>
+      <p class="sticker">Pesan dari web, admin balas langsung di WhatsApp</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ================= CABANG ================= -->
-  <section id="cabang">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag">Lokasi</span>
-          <h2>Pilih cabang<br>terdekat</h2>
-        </div>
-        <p>Ketiganya dipasok dari rumah produksi yang sama, jadi rasanya konsisten di mana pun kamu makan.</p>
-      </div>
-    </div>
-    <div class="wrap reveal">
-      <div class="cabang-grid">
-        <div class="cabang-card">
-          <span class="cabang-year mono">Sejak 2021</span>
-          <h3>Ciater</h3>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="#5c4530" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#5c4530" stroke-width="1.6"/></svg>
-            <span><!-- GANTI: alamat lengkap cabang Ciater -->Jl. Raya Ciater No. —, Tangerang Selatan</span>
-          </div>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5c4530" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#5c4530" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <span><!-- GANTI: jam operasional -->10.00 – 21.00 WIB</span>
-          </div>
-          <span class="cabang-badge">Cabang Pertama</span>
-        </div>
-
-        <div class="cabang-card fokus">
-          <span class="cabang-year mono">Sejak 2023</span>
-          <h3>Ciputat</h3>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="#5c4530" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#5c4530" stroke-width="1.6"/></svg>
-            <span><!-- GANTI: alamat lengkap cabang Ciputat -->Jl. Raya Ciputat No. —, Tangerang Selatan</span>
-          </div>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5c4530" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#5c4530" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <span><!-- GANTI: jam operasional -->10.00 – 21.00 WIB</span>
-          </div>
-          <span class="cabang-badge">Cabang Utama</span>
-        </div>
-
-        <div class="cabang-card">
-          <span class="cabang-year mono">Sejak 2025</span>
-          <h3>Pengasinan</h3>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="#5c4530" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#5c4530" stroke-width="1.6"/></svg>
-            <span><!-- GANTI: alamat lengkap cabang Pengasinan -->Jl. Pengasinan No. —, Tangerang Selatan</span>
-          </div>
-          <div class="cabang-meta">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5c4530" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#5c4530" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <span><!-- GANTI: jam operasional -->10.00 – 21.00 WIB</span>
-          </div>
-          <span class="cabang-badge">Cabang Terbaru</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= GALERI ================= -->
-  <section id="galeri" style="background:var(--paper-dim);">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag">Galeri</span>
-          <h2>Suasana &amp;<br>racikan kami</h2>
-        </div>
-        <p><!-- GANTI: bagian ini masih berupa panel bertekstur — ganti dengan foto asli suasana warung, proses masak, dan menu -->Foto asli menyusul — panel di bawah ini hanya penempatan sementara.</p>
-      </div>
-      <div class="galeri-grid reveal">
-        <div class="galeri-tile a"><span>Rumah Produksi</span></div>
-        <div class="galeri-tile b"><span>Cabang Ciater</span></div>
-        <div class="galeri-tile c"><span>Cabang Ciputat</span></div>
-        <div class="galeri-tile d"><span>Bakso Urat</span></div>
-        <div class="galeri-tile e"><span>Mie Ayam Bakso</span></div>
-        <div class="galeri-tile f"><span>Cabang Pengasinan</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ULASAN / QR ================= -->
-  <section class="on-dark" id="ulasan">
-    <div class="wrap ulasan-grid reveal">
+<section id="menu" aria-labelledby="h-menu">
+  <div class="wrap">
+    <div class="sec-head">
       <div>
-        <span class="tag" style="color:var(--turmeric);">Ulasan Pelanggan</span>
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <p class="quote">"Kuahnya berasa banget, baksonya kenyal padat. Enak dimakan pas hujan begini."<cite><!-- GANTI: ganti dengan kutipan ulasan asli & nama pelanggan (dengan izin) -->— Pelanggan Cabang Ciputat</cite></p>
-        <p style="margin-top:24px; max-width:44ch; color:rgba(243,234,217,.75); font-size:15px;">Sudah makan di sini? Bantu pelanggan lain menemukan kami dengan meninggalkan ulasan di Google — cukup pindai kode di samping.</p>
+        <h2 id="h-menu">Menu</h2>
+        <p class="lead">Pilih yang kamu mau, lalu kirim pesanan ke admin lewat WhatsApp.</p>
       </div>
-      <div class="qr-card">
-        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAYYAAAGGCAIAAADw4rGyAAAIn0lEQVR4nO3cQXIj1RJA0d8/ej2wAlbPCmDUW+hxb4AhDIhniEcqb8nnTB2WSlXyjTdI55cf37/9D6Dh/9sXAPAnSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgJCv5x//9PMvr7mOl/n9t18PP735vDevPHdVZ1vve3a+qrO5+9z85jzR+fM6JQEhkgSESBIQIklAiCQBIZIEhEgSECJJQIgkASEfTG+f3UzZzpmbo90yN83cnCm/MTefPfe+N5rf2JvP65QEhEgSECJJQIgkASGSBIRIEhAiSUCIJAEhkgSEXE1vn73fxGpzXvnsZqp4btb5iTPlT/yvgCf+DTolASGSBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIYPT20+0NZ/dnFeem9BtvvLW5Hdzf/YWpyQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCDE9Pa/cDNFvTWBfTZ3Vc0panPSfU5JQIgkASGSBIRIEhAiSUCIJAEhkgSESBIQIklAyOD0tknZv5rbvrw1Jz03y771zfls0/lNTklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhAiSUDI1fT21kzqE21NBs/NhW9dc/NebXm/v0GnJCBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIOTLj+/ftq8h5P0mg+e2a9+8b3PL9ROnt9+PUxIQIklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhDywe7trYnkrfndOVtTxU+8V01zT7D5FLZm952SgBBJAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAkLXd280dyXNztFvzu3MzuHPve2Pu/w22ZqybT3DuPjslASGSBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIYO7t5tztFtTxWdzd/Lmd+cmzrcmobd2yTf/32Dr7/fMKQkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQi52r29NVX8xLnwrXnlLc0t183Z/bPmX9mZ3dvAm5AkIESSgBBJAkIkCQiRJCBEkoAQSQJCJAkIuZrenvPE2e7mK9944sR5c5/02dac9NbzPV+zUxIQIklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhAyOL3dnMA+a86zfrZd1M3P2/xunG3Nhd9wSgJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgBBJAkI+mN5ubl+2e/s1r/x+m6pvzN2rud+dM/f0nZKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoCQq93bzanTJ07ZPnEn9I3mvWrOsj/xL+WGUxIQIklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhBytXv7idumb2xtmz4zVfwaT9yf/cQ76ZQEhEgSECJJQIgkASGSBIRIEhAiSUCIJAEhkgSEfN2+gL93Mwu7Na/cnGW/ed+zrVn2rSnqm3vVfL7Nb6xTEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhEgSEHK1e/tsa7q3ec1PvKq5OekbW3fSE3wNpyQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCDkanr7Zjb07Imzv82p4ua8slf+5z7blLxTEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhEgSEPL1/OObKcytidWbqdM5W1uQ5+7G3CdqPsGzrWf0fv9f4ZQEhEgSECJJQIgkASGSBIRIEhAiSUCIJAEhkgSEXO3evjE3/Tlna6r4iXPwW8/3iZPfZ81nNPf/Bk5JQIgkASGSBIRIEhAiSUCIJAEhkgSESBIQIklAyNXu7bnJ4K3dzOf3be7AnjP3FJpP/+z9tqc3p/OdkoAQSQJCJAkIkSQgRJKAEEkCQiQJCJEkIESSgJC13dtnNnO/RvM+f7Z94Wdb/6swN49+5pQEhEgSECJJQIgkASGSBIRIEhAiSUCIJAEhkgSEXO3ePnu/3cxzE6tbe8q3NkY3d1G/n62/lJun75QEhEgSECJJQIgkASGSBIRIEhAiSUCIJAEhkgSEDO7e/mw7krds7UhuTn4/cWq8+Yzs3gaQJKBEkoAQSQJCJAkIkSQgRJKAEEkCQiQJCBncvb31yk+cWJ3TvBvNifM5T/zmbHFKAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQj7YvX3jibuKz564L7w5r7x1J5tT480Z+hs3V+WUBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhHywe3tuynZucnRu2nXuE83d560p6q3n+0Rb35wmpyQgRJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBkcPf2E83tSL7xxG3TN97vTj5x5/fWKzslASGSBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIYO7t5ua88pnn232d84Tv8/N+fu593VKAkIkCQiRJCBEkoAQSQJCJAkIkSQgRJKAEEkCQj6Y3j5rTkLfTOjObdee2818c1Vzvzv33Wjuz56zNZ0/5/yJnJKAEEkCQiQJCJEkIESSgBBJAkIkCQiRJCBEkoCQq+nts7nZ0OY869x89py5Sei5OenmzPGNJ24En+OUBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhAxObz/R1u7ts7nJ75tX3tqu/X4T9s3Pu/XKTklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhAiSUCI6e3/zNzs79bMcXNf+I3m3u6t/wpoXpVTEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhEgSEDI4vf3E6d6zuWnXrR3Yc5/oxs3daM6yP/FObr2yUxIQIklAiCQBIZIEhEgSECJJQIgkASGSBIRIEhDy5cf3b4cfb02dztma/b0x9xTm7sYTvznN2e7mN3ZuM7dTEhAiSUCIJAEhkgSESBIQIklAiCQBIZIEhEgSEPLB9DbAKzklASGSBIRIEhAiSUCIJAEhkgSESBIQIklAiCQBIX8AUS7EklxZafgAAAAASUVORK5CYII=" alt="QR Code menuju halaman ulasan Google Bakso Seger Boyolali" width="170" height="170">
-        <span class="cap">Pindai untuk<br>beri ulasan</span>
-      </div>
+      <div class="tabs" role="tablist" aria-label="Kategori menu" id="menu-tabs"></div>
     </div>
-  </section>
+    <ul class="menu-list" id="menu-list"></ul>
+    <p class="note">Harga dan ketersediaan menu dapat berbeda di tiap cabang. Admin akan mengonfirmasi saat membalas pesananmu.</p>
+  </div>
+</section>
 
-  <!-- ================= KONTAK ================= -->
-  <section id="kontak">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <div>
-          <span class="tag">Kontak</span>
-          <h2>Hubungi<br>kami</h2>
-        </div>
-        <p>Untuk pertanyaan menu, pemesanan dalam jumlah besar, atau kerja sama cabang.</p>
-      </div>
-      <div class="kontak-grid reveal">
-        <ul class="kontak-list">
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h2.7a1 1 0 0 1 .95.68l1.2 3.6a1 1 0 0 1-.27 1.04L8.6 9.8a12.5 12.5 0 0 0 5.6 5.6l1.48-1.48a1 1 0 0 1 1.04-.27l3.6 1.2a1 1 0 0 1 .68.95v2.7A2.5 2.5 0 0 1 18.5 21C9.94 21 3 14.06 3 5.5Z" stroke="#a62b1f" stroke-width="1.6"/></svg>
-            <div><b>WhatsApp / Telepon</b><!-- GANTI: nomor WhatsApp asli --><span>0812-XXXX-XXXX (Cabang Ciputat)</span></div>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#a62b1f" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="#a62b1f" stroke-width="1.6"/></svg>
-            <div><b>Email</b><!-- GANTI: email asli jika ada --><span>halo@baksosegerboyolali.contoh</span></div>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.2 7-12.5A7 7 0 0 0 5 9.5C5 14.8 12 22 12 22Z" stroke="#a62b1f" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="#a62b1f" stroke-width="1.6"/></svg>
-            <div><b>Alamat Cabang Utama</b><!-- GANTI: alamat lengkap --><span>Jl. Raya Ciputat No. —, Tangerang Selatan, Banten</span></div>
-          </li>
-          <li>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#a62b1f" stroke-width="1.6"/><path d="M12 7v5l3.5 2" stroke="#a62b1f" stroke-width="1.6" stroke-linecap="round"/></svg>
-            <div><b>Jam Operasional</b><span>Setiap hari, 10.00 – 21.00 WIB</span></div>
-          </li>
-        </ul>
-        <div class="map-frame">
-          <!-- GANTI: setelah lokasi diklaim di Google Maps, ganti query pencarian di bawah dengan alamat resmi -->
-          <iframe title="Peta lokasi Bakso Seger Boyolali cabang Ciputat" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Bakso%20Seger%20Boyolali%20Ciputat&output=embed"></iframe>
-        </div>
-      </div>
+<section aria-labelledby="h-cara">
+  <div class="wrap">
+    <h2 id="h-cara">Cara pesan</h2>
+    <ol class="steps">
+      <li><h3>Pilih menu</h3><p>Tekan tanda + pada menu yang kamu mau. Jumlahnya bisa diubah kapan saja.</p></li>
+      <li><h3>Kirim ke WhatsApp</h3><p>Isi nama, cabang, dan cara menerima pesanan, lalu tekan Kirim ke WhatsApp.</p></li>
+      <li><h3>Tunggu konfirmasi</h3><p>Admin membalas langsung untuk memastikan pesanan dan waktu siapnya.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="cabang" aria-labelledby="h-cabang">
+  <div class="wrap">
+    <h2 id="h-cabang">Cabang terdekat</h2>
+    <div class="branch-tabs" role="tablist" aria-label="Pilih cabang" id="branch-tabs"></div>
+    <div class="branch-body">
+      <div class="info" id="branch-info" role="tabpanel" aria-live="polite"></div>
+      <div class="map" id="branch-map"></div>
     </div>
-  </section>
+  </div>
+</section>
 
+<section id="tentang" aria-labelledby="h-tentang">
+  <div class="wrap about">
+    <div>
+      <h2 id="h-tentang">Tentang kami</h2>
+      <p class="big" style="margin-top:22px">Semangkuk bakso hangat itu sederhana. Yang bikin balik lagi adalah rasanya.</p>
+    </div>
+    <div>
+      <p>Bakso Seger Boyolali adalah usaha kuliner bakso dengan tiga cabang: Ciater, Ciputat, dan Pengasinan. Kami menyajikan bakso dan makanan pendamping dengan kuah yang hangat dan segar, bergaya khas Boyolali.</p>
+      <ul class="values">
+        <li><b>Segar dan hangat</b>Disajikan panas, siap dinikmati siang maupun malam.</li>
+        <li><b>Dekat denganmu</b>Tiga cabang, dengan alamat, jam buka, dan rute yang jelas.</li>
+        <li><b>Pesan tanpa ribet</b>Pilih menu di web, admin membalas langsung lewat WhatsApp.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="ulasan" aria-labelledby="h-ulasan">
+  <div class="wrap">
+    <h2 id="h-ulasan">Suka baksonya? Tulis ulasan jujurmu</h2>
+    <p class="lead">Scan kode QR dengan kamera ponsel. Ulasanmu membantu orang lain yang sedang mencari bakso terdekat.</p>
+    <div class="branch-tabs" role="tablist" aria-label="Pilih cabang untuk ulasan" id="qr-tabs"></div>
+    <div class="qr-grid">
+      <div class="qr"><div class="code" id="qr-review" role="img" aria-label="Kode QR untuk menulis ulasan"></div><p>Tulis ulasan</p><a id="qr-review-link" href="#" target="_blank" rel="noopener">Atau buka tautannya</a></div>
+      <div class="qr"><div class="code" id="qr-maps" role="img" aria-label="Kode QR untuk membuka lokasi di Google Maps"></div><p>Buka di Google Maps</p><a id="qr-maps-link" href="#" target="_blank" rel="noopener">Atau buka tautannya</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="artikel" aria-labelledby="h-artikel">
+  <div class="wrap">
+    <article class="article">
+      <h2 id="h-artikel">Bakso enak di Ciputat: panduan memilih bakso Boyolali</h2>
+      <p class="meta">Panduan singkat untuk pencari bakso di Ciputat, Ciater, dan Pengasinan.</p>
+      <p>Mencari <strong>bakso enak di Ciputat</strong> bisa membingungkan karena pilihannya banyak. Mulai dari bakso malang, bakso urat, sampai bakso dengan isian unik, semuanya menawarkan rasa berbeda. Panduan ini membantu kamu memilih, terutama kalau kamu suka bakso bergaya Boyolali yang hangat dan menyegarkan.</p>
+      <h3>Apa yang membuat bakso Boyolali berbeda?</h3>
+      <p>Bakso gaya Boyolali dikenal dengan kuah kaldu yang gurih dan ringan, disajikan panas, lalu dilengkapi sambal, saus, dan pelengkap sesuai selera. Karena kuahnya tidak berat, bakso ini nyaman dinikmati kapan saja.</p>
+      <h3>Tips memilih tempat makan bakso di Ciputat</h3>
+      <ol>
+        <li><b>Cek ulasan di Google Maps.</b> Baca ulasan terbaru dan lihat foto dari pelanggan, bukan hanya foto dari pemilik.</li>
+        <li><b>Pastikan jam buka.</b> Cek jam operasional di Google supaya tidak datang saat tutup.</li>
+        <li><b>Perhatikan kebersihan dan kenyamanan tempat.</b> Lihat foto tempat dan ulasan tentang pelayanan.</li>
+        <li><b>Pilih lokasi yang mudah dijangkau.</b> Pakai fitur rute di Google Maps untuk membandingkan jarak.</li>
+        <li><b>Lihat pilihan menu.</b> Pastikan ada bakso dan makanan pendamping yang kamu suka.</li>
+      </ol>
+      <h3>Cabang Bakso Seger Boyolali terdekat</h3>
+      <p>Bakso Seger Boyolali tersedia di <strong>Ciater, Ciputat, dan Pengasinan</strong>. Lihat alamat, jam buka, dan rute di bagian <a href="#cabang">Cabang</a>, atau langsung <a href="#menu">pesan lewat WhatsApp</a> dan admin akan membalasmu.</p>
+      <p>Memilih bakso enak di Ciputat paling mudah dengan membaca ulasan, mengecek jam buka, dan melihat langsung menu serta lokasinya. Selamat mencoba!</p>
+      <p class="blog"><a class="btn green small" id="blog-link" href="#" target="_blank" rel="noopener">Baca artikel lainnya di blog kami</a></p>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="h-faq">
+  <div class="wrap faq">
+    <h2 id="h-faq" style="margin-bottom:26px">Pertanyaan yang sering ditanyakan</h2>
+    <details><summary>Bakso Seger Boyolali ada di mana saja?</summary><p>Ada tiga cabang: Ciater, Ciputat, dan Pengasinan. Alamat dan rute Google Maps tiap cabang ada di bagian Cabang.</p></details>
+    <details><summary>Bagaimana cara memesan?</summary><p>Pilih menu di halaman ini, isi nama dan cabang, lalu tekan Kirim ke WhatsApp. Pesananmu masuk ke WhatsApp Bisnis 0851-2804-1948 dan dibalas langsung oleh admin.</p></details>
+    <details><summary>Jam buka tiap cabang?</summary><p>Jam buka ditampilkan di bagian Cabang. Pilih cabang yang kamu tuju untuk melihat jam operasionalnya.</p></details>
+    <details><summary>Bagaimana cara menulis ulasan?</summary><p>Scan kode QR di bagian Ulasan, atau buka tautannya. Tulis pengalamanmu apa adanya, karena ulasan jujur paling membantu pelanggan lain.</p></details>
+  </div>
+</section>
 </main>
 
-<!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap">
-    <div class="foot-top">
-      <div class="foot-brand">Bakso Seger Boyolali</div>
-      <div class="foot-social" aria-label="Media sosial">
-        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></a>
-        <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M14 3v10.7a3.3 3.3 0 1 1-2.4-3.18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M14 3c.4 2.6 2.2 4.4 4.8 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-        <a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h2.7a1 1 0 0 1 .95.68l1.2 3.6a1 1 0 0 1-.27 1.04L8.6 9.8a12.5 12.5 0 0 0 5.6 5.6l1.48-1.48a1 1 0 0 1 1.04-.27l3.6 1.2a1 1 0 0 1 .68.95v2.7A2.5 2.5 0 0 1 18.5 21C9.94 21 3 14.06 3 5.5Z" stroke="currentColor" stroke-width="1.6"/></svg></a>
+    <div class="cols">
+      <div>
+        <h2>Bakso Seger Boyolali</h2>
+        <p>Kuah hangat, rasa bikin balik lagi.</p>
+      </div>
+      <div>
+        <h3>Hubungi kami</h3>
+        <address>
+          <span>WhatsApp Bisnis: <a href="#" data-wa id="f-wa">0851-2804-1948</a></span>
+          <span>Email: <a href="mailto:admin@baksosegerboyolali.com">admin@baksosegerboyolali.com</a></span>
+        </address>
+      </div>
+      <div>
+        <h3>Cabang</h3>
+        <address id="f-branches"></address>
       </div>
     </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> Bakso Seger Boyolali. Seluruh hak cipta dilindungi.</span>
-      <span>Ciater · Ciputat · Pengasinan</span>
-    </div>
+    <p class="legal">© <span id="yr"></span> Bakso Seger Boyolali. Proyek Optimasi Mesin Pencari, Kelompok 6.</p>
   </div>
 </footer>
 
-<!-- GANTI: nomor WhatsApp pada tautan tombol mengambang di bawah -->
-<a class="float-wa" href="https://wa.me/62812XXXXXXX" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M3 5.5A2.5 2.5 0 0 1 5.5 3h2.7a1 1 0 0 1 .95.68l1.2 3.6a1 1 0 0 1-.27 1.04L8.6 9.8a12.5 12.5 0 0 0 5.6 5.6l1.48-1.48a1 1 0 0 1 1.04-.27l3.6 1.2a1 1 0 0 1 .68.95v2.7A2.5 2.5 0 0 1 18.5 21C9.94 21 3 14.06 3 5.5Z" stroke="#f3ead9" stroke-width="1.7"/></svg>
-</a>
+<a class="fab" href="#" data-wa aria-label="Chat WhatsApp Bakso Seger Boyolali"><svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.1 1.6 5.9L0 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4c6.6 0 11.9-5.3 11.9-11.9 0-3.2-1.2-6.2-3.4-8.3zM12 21.7c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.800 1 1-3.700-.2-.4a9.800 9.800 0 0 1-1.500-5.200c0-5.400 4.400-9.800 9.900-9.800 2.600 0 5.100 1 6.900 2.900a9.700 9.700 0 0 1 2.900 6.900c0 5.400-4.400 9.900-9.800 9.900zm5.400-7.400c-.3-.1-1.800-.9-2-1-.3-.1-.5-.1-.7.1-.2.300-.8 1-.9 1.200-.2.200-.3.200-.6.100-.3-.1-1.200-.4-2.300-1.400-.9-.8-1.400-1.700-1.600-2-.2-.3 0-.5.100-.6l.4-.5c.1-.2.200-.3.300-.5.100-.2 0-.4 0-.5l-.9-2.200c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1 1-1 2.500s1.100 2.900 1.200 3.100c.1.200 2.100 3.200 5.100 4.500.7.300 1.300.5 1.700.6.700.2 1.400.2 1.900.1.600-.1 1.800-.7 2-1.400.3-.7.3-1.300.2-1.400-.1-.1-.3-.2-.6-.3z"/></svg></a>
 
+<div class="cartbar" id="cartbar" role="status">
+  <b id="cart-count">0 item</b>
+  <button class="btn red small" id="open-cart" type="button">Lihat pesanan</button>
+</div>
+
+<dialog id="dlg" aria-labelledby="dlg-title">
+  <div class="dlg">
+    <button class="close" type="button" id="close-dlg" aria-label="Tutup">×</button>
+    <h2 id="dlg-title">Pesananmu</h2>
+    <ul class="cart-lines" id="cart-lines"></ul>
+    <form id="order-form" novalidate>
+      <div class="field"><label for="f-nama">Nama</label><input id="f-nama" name="nama" autocomplete="name" required></div>
+      <div class="field"><label for="f-cabang">Cabang</label><select id="f-cabang" name="cabang"></select></div>
+      <div class="field"><label for="f-tipe">Cara menerima</label>
+        <select id="f-tipe" name="tipe"><option>Makan di tempat</option><option>Bawa pulang</option><option>Diantar</option></select></div>
+      <div class="field"><label for="f-cat">Catatan (opsional)</label><textarea id="f-cat" name="catatan" rows="2" placeholder="Contoh: tidak pakai sambal"></textarea></div>
+      <p class="err" id="err" aria-live="polite"></p>
+      <button class="btn red" type="submit">Kirim ke WhatsApp</button>
+    </form>
+  </div>
+</dialog>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
+/* =====================================================================
+   PENGATURAN: ubah bagian ini saja. Teks bertanda [ ] akan tampil
+   dengan garis putus-putus kuning sampai kamu menggantinya.
+   ===================================================================== */
+var CONFIG = {
+  domain: "https://baksosegerboyolali.com",
+  wa: "6285128041948",              // 0851-2804-1948 dalam format internasional
+  waTampil: "0851-2804-1948",
+  email: "admin@baksosegerboyolali.com",
+  blogUrl: "https://NAMA-BLOG-KAMU.blogspot.com", // ganti dengan alamat Blogger
+  cabang: [
+    { id: "ciater", nama: "Ciater", wilayah: "Serpong, Tangerang Selatan",
+      alamat: "[Isi alamat lengkap cabang Ciater]", jam: "[Isi jam buka cabang Ciater]",
+      mapQuery: "Bakso Seger Boyolali Ciater", reviewUrl: "", mapsUrl: "" },
+    { id: "ciputat", nama: "Ciputat", wilayah: "Tangerang Selatan",
+      alamat: "[Isi alamat lengkap cabang Ciputat]", jam: "[Isi jam buka cabang Ciputat]",
+      mapQuery: "Bakso Seger Boyolali Ciputat", reviewUrl: "", mapsUrl: "" },
+    { id: "pengasinan", nama: "Pengasinan", wilayah: "",
+      alamat: "[Isi alamat lengkap cabang Pengasinan]", jam: "[Isi jam buka cabang Pengasinan]",
+      mapQuery: "Bakso Seger Boyolali Pengasinan", reviewUrl: "", mapsUrl: "" }
+  ],
+  /* Isi harga (angka rupiah) bila ingin ditampilkan. 0 = tidak tampil. */
+  menu: [
+    { k: "Bakso", n: "Bakso halus", d: "Bakso lembut dengan kuah kaldu hangat.", p: 0 },
+    { k: "Bakso", n: "Bakso urat", d: "Bakso dengan tekstur urat yang kenyal.", p: 0 },
+    { k: "Bakso", n: "Bakso telur", d: "Bakso berisi telur, cocok untuk yang lapar.", p: 0 },
+    { k: "Bakso", n: "Bakso komplit", d: "Campuran bakso dan pelengkap dalam satu mangkuk.", p: 0 },
+    { k: "Pendamping", n: "Tahu bakso", d: "Tahu isi, pas dimakan bersama kuah.", p: 0 },
+    { k: "Pendamping", n: "Pangsit goreng", d: "Renyah, teman makan bakso.", p: 0 },
+    { k: "Pendamping", n: "Mie atau bihun", d: "Tambahan karbo untuk mangkukmu.", p: 0 },
+    { k: "Minuman", n: "Es teh", d: "Segar untuk menemani makan.", p: 0 },
+    { k: "Minuman", n: "Teh hangat", d: "Hangat, pas untuk malam hari.", p: 0 },
+    { k: "Minuman", n: "Es jeruk", d: "Asam segar yang menyeimbangkan kuah.", p: 0 }
+  ]
+};
+/* ===================================================================== */
 
-  // mobile nav toggle
-  var toggle = document.getElementById('navToggle');
-  var links = document.querySelector('.nav-links');
-  if(toggle){
-    toggle.addEventListener('click', function(){
-      var open = links.style.display === 'flex';
-      links.style.display = open ? 'none' : 'flex';
-      links.style.cssText += 'position:absolute; top:100%; left:0; right:0; flex-direction:column; background:var(--paper); padding:18px 28px; border-bottom:1px solid var(--line); gap:16px;';
-      toggle.setAttribute('aria-expanded', String(!open));
-    });
-  }
+(function(){
+  "use strict";
+  var $ = function(s, r){ return (r||document).querySelector(s); };
+  var esc = function(s){ return String(s).replace(/[&<>"']/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]; }); };
+  var isTodo = function(s){ return /\[.*\]/.test(s); };
+  var todo = function(s){ return isTodo(s) ? '<span class="todo">'+esc(s)+'</span>' : esc(s); };
+  var rp = function(n){ return "Rp" + n.toLocaleString("id-ID"); };
+  var C = CONFIG;
+  var waLink = function(text){ return "https://wa.me/" + C.wa + (text ? "?text=" + encodeURIComponent(text) : ""); };
+  var mapsSearch = function(q){ return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q); };
+  var mapsRoute = function(q){ return "https://www.google.com/maps/dir/?api=1&destination=" + encodeURIComponent(q); };
+  var mapsUrl = function(b){ return b.mapsUrl || mapsSearch(b.mapQuery); };
+  var reviewUrl = function(b){ return b.reviewUrl || mapsUrl(b); };
 
-  // scroll reveal
-  var els = document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  /* tautan WhatsApp umum */
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = waLink("Halo admin Bakso Seger Boyolali, saya mau tanya/pesan.");
+    a.target = "_blank"; a.rel = "noopener";
+  });
+  $("#blog-link").href = C.blogUrl;
+  $("#yr").textContent = new Date().getFullYear();
+
+  /* nav mobile */
+  var burger = $(".burger"), nav = $("#nav");
+  burger.addEventListener("click", function(){
+    var o = nav.classList.toggle("open");
+    burger.setAttribute("aria-expanded", o);
+  });
+  nav.addEventListener("click", function(e){ if (e.target.tagName === "A") { nav.classList.remove("open"); burger.setAttribute("aria-expanded", "false"); } });
+
+  /* nav aktif */
+  if ("IntersectionObserver" in window) {
+    var links = {};
+    nav.querySelectorAll('a[href^="#"]').forEach(function(a){ links[a.getAttribute("href").slice(1)] = a; });
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && links[e.target.id]) {
+          Object.keys(links).forEach(function(k){ links[k].classList.remove("on"); });
+          links[e.target.id].classList.add("on");
+        }
       });
-    }, { threshold: 0.15 });
-    els.forEach(function(el){ io.observe(el); });
-  } else {
-    els.forEach(function(el){ el.classList.add('in'); });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    Object.keys(links).forEach(function(id){ var el = document.getElementById(id); if (el) io.observe(el); });
   }
 
-  // menu tabs (kept simple/progressive: currently one list, tabs reserved for future category filtering)
-</script>
-
-
-
-</div>
-
-<!-- ===================================================== -->
-<!-- LOGIN + APLIKASI ADMIN + MODAL + TOAST                 -->
-<!-- ===================================================== -->
-
-<div id="loginPage"
-     class="login-page hidden">
-
-<div class="login-card">
-
-<div class="brand">
-
-<div class="logo">
-    BS
-</div>
-
-<span>
-    Bakso Seger Boyolali
-</span>
-
-</div>
-
-
-<h1>
-    Masuk ke Sistem
-</h1>
-
-<p class="muted">
-    Silakan masuk menggunakan akun sesuai peran.
-</p>
-
-
-<div class="form-group">
-
-<label>
-    Username
-</label>
-
-<input id="username"
-       type="text"
-       placeholder="Masukkan username">
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-    Password
-</label>
-
-<input id="password"
-       type="password"
-       placeholder="Masukkan password">
-
-</div>
-
-
-<div class="form-group">
-
-<label>
-    Peran Pengguna
-</label>
-
-<select id="userRole">
-
-<option value="owner">
-    Pemilik / Admin
-</option>
-
-<option value="branch">
-    Karyawan Cabang
-</option>
-
-<option value="production">
-    Petugas Rumah Produksi
-</option>
-
-</select>
-
-</div>
-
-
-<button class="btn"
-        style="width:100%"
-        onclick="login()">
-
-    Masuk ke Sistem
-
-</button>
-
-
-<div class="login-info"
-     style="margin-top:15px">
-
-    Prototype penelitian.
-    Username dan password dapat menggunakan
-    data demo. Peran menentukan menu sistem.
-
-</div>
-
-
-<button class="btn-outline"
-        style="margin-top:12px;width:100%"
-        onclick="showPublic()">
-
-    ← Kembali ke Website
-
-</button>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     APLIKASI ADMIN
-===================================================== -->
-
-<div id="appPage"
-     class="hidden">
-
-
-<header class="app-header">
-
-<div class="brand">
-
-<div class="logo">
-    BS
-</div>
-
-<b id="appTitle">
-    Dashboard
-</b>
-
-</div>
-
-
-<div>
-
-<span id="roleBadge"
-      class="badge badge-info">
-</span>
-
-<button class="btn-outline"
-        onclick="logout()">
-
-    Keluar
-
-</button>
-
-</div>
-
-</header>
-
-
-<div class="app-layout">
-
-
-<aside id="sidebar"
-       class="sidebar">
-
-</aside>
-
-
-<main id="appContent"
-      class="app-content">
-
-</main>
-
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     MODAL
-===================================================== -->
-
-<div id="modal"
-     class="modal hidden">
-
-<div id="modalBox"
-     class="modal-box">
-
-</div>
-
-</div>
-
-
-<div id="toast"
-     class="toast hidden">
-
-</div>
-
-<script>
-
-/* =====================================================
-   DATA DEMO
-===================================================== */
-
-const DATA = {
-
-role:"owner",
-
-page:"dashboard",
-
-branches:[
-
-{
-    id:"ciater",
-    name:"Ciater",
-    stock:62,
-    minimum:30
-},
-
-{
-    id:"ciputat",
-    name:"Ciputat",
-    stock:18,
-    minimum:25
-},
-
-{
-    id:"pengasinan",
-    name:"Pengasinan",
-    stock:41,
-    minimum:25
-}
-
-],
-
-requests:[
-
-{
-    id:"REQ-001",
-    branch:"Ciputat",
-    item:"Bakso",
-    quantity:30,
-    note:"Stok menipis",
-    status:"pending",
-    date:"21/08/2026"
-},
-
-{
-    id:"REQ-002",
-    branch:"Ciater",
-    item:"Bakso",
-    quantity:20,
-    note:"Stok tambahan",
-    status:"sent",
-    date:"21/08/2026"
-}
-
-],
-
-distributions:[
-
-{
-    id:"DST-001",
-    branch:"Ciputat",
-    item:"Bakso",
-    quantity:30,
-    status:"pending",
-    date:"21/08/2026"
-},
-
-{
-    id:"DST-002",
-    branch:"Ciater",
-    item:"Bakso",
-    quantity:20,
-    status:"done",
-    date:"21/08/2026"
-}
-
-]
-
-};
-
-
-const ROLE_NAMES = {
-
-owner:"Pemilik / Admin",
-
-branch:"Karyawan Cabang",
-
-production:"Petugas Rumah Produksi"
-
-};
-
-
-const PAGE_NAMES = {
-
-dashboard:"Dashboard",
-
-stock:"Monitoring Stok",
-
-requests:"Permintaan Stok",
-
-distribution:"Distribusi Stok",
-
-branches:"Data Cabang",
-
-profile:"Profil Usaha"
-
-};
-
-
-/* =====================================================
-   PUBLIC
-===================================================== */
-
-
-function showLogin(){
-
-    document
-        .getElementById("publicPage")
-        .classList.add("hidden");
-
-    document
-        .getElementById("loginPage")
-        .classList.remove("hidden");
-
-}
-
-
-function showPublic(){
-
-    document
-        .getElementById("loginPage")
-        .classList.add("hidden");
-
-    document
-        .getElementById("appPage")
-        .classList.add("hidden");
-
-    document
-        .getElementById("publicPage")
-        .classList.remove("hidden");
-
-}
-
-
-/* =====================================================
-   LOGIN
-===================================================== */
-
-function login(){
-
-    const role =
-        document.getElementById("userRole").value;
-
-    DATA.role = role;
-
-    DATA.page = "dashboard";
-
-    document
-        .getElementById("loginPage")
-        .classList.add("hidden");
-
-    document
-        .getElementById("appPage")
-        .classList.remove("hidden");
-
-    renderApp();
-
-}
-
-
-function logout(){
-
-    showPublic();
-
-}
-
-
-/* =====================================================
-   APP NAVIGATION
-===================================================== */
-
-function setPage(page){
-
-    DATA.page = page;
-
-    renderApp();
-
-}
-
-
-/* =====================================================
-   STATUS
-===================================================== */
-
-function statusBadge(status){
-
-    if(status === "pending"){
-
-        return `
-        <span class="badge badge-warning">
-            Menunggu
-        </span>`;
-
-    }
-
-    if(status === "sent"){
-
-        return `
-        <span class="badge badge-info">
-            Dikirim
-        </span>`;
-
-    }
-
-    if(status === "done"){
-
-        return `
-        <span class="badge badge-success">
-            Diterima
-        </span>`;
-
-    }
-
-}
-
-
-/* =====================================================
-   RENDER APP
-===================================================== */
-
-function renderApp(){
-
-    document
-        .getElementById("appTitle")
-        .textContent =
-        PAGE_NAMES[DATA.page];
-
-
-    document
-        .getElementById("roleBadge")
-        .textContent =
-        ROLE_NAMES[DATA.role];
-
-
-    let menus = [];
-
-
-    /*
-       PEMILIK
-    */
-
-    if(DATA.role === "owner"){
-
-        menus = [
-
-            ["dashboard","Dashboard"],
-
-            ["stock","Monitoring Stok"],
-
-            ["requests","Permintaan Stok"],
-
-            ["distribution","Distribusi Stok"],
-
-            ["branches","Data Cabang"],
-
-            ["profile","Profil Usaha"]
-
-        ];
-
-    }
-
-
-    /*
-       KARYAWAN CABANG
-    */
-
-    if(DATA.role === "branch"){
-
-        menus = [
-
-            ["dashboard","Dashboard"],
-
-            ["stock","Stok Cabang"],
-
-            ["requests","Permintaan Stok"],
-
-            ["distribution","Penerimaan"],
-
-            ["profile","Profil Usaha"]
-
-        ];
-
-    }
-
-
-    /*
-       RUMAH PRODUKSI
-    */
-
-    if(DATA.role === "production"){
-
-        menus = [
-
-            ["dashboard","Dashboard"],
-
-            ["stock","Stok Produksi"],
-
-            ["requests","Permintaan Cabang"],
-
-            ["distribution","Pengiriman"],
-
-            ["profile","Profil Usaha"]
-
-        ];
-
-    }
-
-
-    document
-        .getElementById("sidebar")
-        .innerHTML =
-
-        `
-        <div class="sidebar-title">
-            MENU UTAMA
-        </div>
-
-        ${
-            menus
-            .map(item => `
-
-                <button
-                    class="${
-                        DATA.page === item[0]
-                        ? "active"
-                        : ""
-                    }"
-
-                    onclick="
-                        setPage('${item[0]}')
-                    "
-                >
-
-                    ${item[1]}
-
-                </button>
-
-            `)
-            .join("")
-        }
-
-        `;
-
-
-    const pages = {
-
-        dashboard:dashboardPage,
-
-        stock:stockPage,
-
-        requests:requestsPage,
-
-        distribution:distributionPage,
-
-        branches:branchesPage,
-
-        profile:profilePage
-
-    };
-
-
-    document
-        .getElementById("appContent")
-        .innerHTML =
-        pages[DATA.page]();
-
-}
-
-
-/* =====================================================
-   DASHBOARD
-===================================================== */
-
-function dashboardPage(){
-
-    const lowStock =
-        DATA.branches
-        .filter(
-            branch =>
-            branch.stock < branch.minimum
-        )
-        .length;
-
-
-    const pending =
-        DATA.requests
-        .filter(
-            request =>
-            request.status === "pending"
-        )
-        .length;
-
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Dashboard
-            </h1>
-
-            <p class="muted">
-                Ringkasan monitoring stok dan
-                distribusi multi-cabang.
-            </p>
-
-        </div>
-
-        <span class="badge badge-info">
-            Sistem Operasional
-        </span>
-
-    </div>
-
-
-    <div class="dashboard-grid">
-
-
-        <div class="metric">
-
-            <small>
-                Total Cabang
-            </small>
-
-            <div class="metric-number">
-                3
-            </div>
-
-            <small>
-                Ciater, Ciputat, Pengasinan
-            </small>
-
-        </div>
-
-
-        <div class="metric">
-
-            <small>
-                Stok Perlu Perhatian
-            </small>
-
-            <div class="metric-number"
-                 style="color:var(--danger)">
-
-                ${lowStock}
-
-            </div>
-
-            <small>
-                Di bawah batas minimum
-            </small>
-
-        </div>
-
-
-        <div class="metric">
-
-            <small>
-                Permintaan Aktif
-            </small>
-
-            <div class="metric-number">
-
-                ${pending}
-
-            </div>
-
-            <small>
-                Menunggu proses
-            </small>
-
-        </div>
-
-
-        <div class="metric">
-
-            <small>
-                Distribusi Tercatat
-            </small>
-
-            <div class="metric-number">
-
-                ${DATA.distributions.length}
-
-            </div>
-
-            <small>
-                Data distribusi
-            </small>
-
-        </div>
-
-
-    </div>
-
-
-    <div class="dashboard-two">
-
-
-        <div class="panel">
-
-            <h3>
-                Kondisi Stok Cabang
-            </h3>
-
-
-            ${
-                DATA.branches
-                .map(branch => `
-
-                    <div class="stock-row">
-
-                        <div class="stock-header">
-
-                            <b>
-                                ${branch.name}
-                            </b>
-
-                            <span
-                                style="
-                                color:${
-                                    branch.stock <
-                                    branch.minimum
-                                    ? "var(--danger)"
-                                    : "var(--success)"
-                                }">
-
-                                ${branch.stock} unit
-
-                            </span>
-
-                        </div>
-
-
-                        <div class="progress">
-
-                            <span
-                                style="
-                                width:${
-                                    Math.min(
-                                        100,
-                                        branch.stock / 60 * 100
-                                    )
-                                }%">
-                            </span>
-
-                        </div>
-
-
-                        <small class="muted">
-
-                            Minimum
-                            ${branch.minimum}
-                            unit
-
-                        </small>
-
-                    </div>
-
-                `)
-                .join("")
-            }
-
-        </div>
-
-
-        <div class="panel">
-
-            <h3>
-                Alur Sistem
-            </h3>
-
-            <p class="muted"
-               style="line-height:1.8">
-
-                Cabang memantau stok,
-                mengajukan kebutuhan,
-                pengelola memproses,
-                rumah produksi menyiapkan,
-                barang dikirim,
-                kemudian cabang mengonfirmasi
-                penerimaan.
-
-            </p>
-
-
-            <div class="login-info">
-
-                Fokus sistem adalah
-                <b>monitoring dan distribusi stok</b>.
-
-                POS/kasir dan laporan penjualan
-                tidak menjadi scope utama.
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   STOCK
-===================================================== */
-
-function stockPage(){
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Monitoring Stok
-            </h1>
-
-            <p class="muted">
-                Pantau ketersediaan stok pada
-                setiap cabang.
-            </p>
-
-        </div>
-
-        <button class="btn"
-                onclick="
-                    notify(
-                        'Form transaksi stok dapat dikembangkan pada tahap backend.'
-                    )
-                ">
-
-            + Catat Perubahan
-
-        </button>
-
-    </div>
-
-
-    <div class="cards">
-
-        ${
-            DATA.branches
-            .map(branch => `
-
-                <div class="card">
-
-                    <span class="
-                        badge
-                        ${
-                            branch.stock <
-                            branch.minimum
-                            ? "badge-warning"
-                            : "badge-success"
-                        }
-                    ">
-
-                        ${
-                            branch.stock <
-                            branch.minimum
-                            ? "Perlu Restock"
-                            : "Stok Aman"
-                        }
-
-                    </span>
-
-
-                    <h2>
-                        ${branch.name}
-                    </h2>
-
-
-                    <div class="metric-number">
-
-                        ${branch.stock}
-                        <small>unit</small>
-
-                    </div>
-
-
-                    <p class="muted">
-
-                        Batas minimum:
-                        ${branch.minimum}
-                        unit
-
-                    </p>
-
-
-                    <div class="progress">
-
-                        <span
-                            style="
-                            width:${
-                                Math.min(
-                                    100,
-                                    branch.stock / 60 * 100
-                                )
-                            }%">
-                        </span>
-
-                    </div>
-
-                </div>
-
-            `)
-            .join("")
-        }
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   REQUEST
-===================================================== */
-
-function requestsPage(){
-
-    const rows =
-        DATA.requests
-        .map(
-            (request,index) => `
-
-            <tr>
-
-                <td>
-
-                    <b>
-                        ${request.id}
-                    </b>
-
-                    <br>
-
-                    <small class="muted">
-                        ${request.date}
-                    </small>
-
-                </td>
-
-
-                <td>
-                    ${request.branch}
-                </td>
-
-
-                <td>
-                    ${request.item}
-                </td>
-
-
-                <td>
-                    ${request.quantity}
-                </td>
-
-
-                <td>
-                    ${request.note}
-                </td>
-
-
-                <td>
-                    ${statusBadge(request.status)}
-                </td>
-
-
-                <td>
-
-                    ${
-                        DATA.role === "owner" &&
-                        request.status === "pending"
-
-                        ?
-
-                        `
-                        <button
-                            class="
-                                action
-                                action-primary
-                            "
-
-                            onclick="
-                                approveRequest(${index})
-                            "
-                        >
-
-                            Proses
-
-                        </button>
-                        `
-
-                        :
-
-                        "—"
-                    }
-
-                </td>
-
-            </tr>
-
-            `
-        )
-        .join("");
-
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Permintaan Stok
-            </h1>
-
-            <p class="muted">
-                Pengajuan kebutuhan stok
-                dari cabang.
-            </p>
-
-        </div>
-
-
-        ${
-            DATA.role === "branch"
-
-            ?
-
-            `
-            <button
-                class="btn"
-                onclick="openRequestModal()"
-            >
-
-                + Ajukan Permintaan
-
-            </button>
-            `
-
-            :
-
-            ""
-        }
-
-    </div>
-
-
-    <div class="table-container">
-
-        <table>
-
-            <thead>
-
-                <tr>
-
-                    <th>
-                        Permintaan
-                    </th>
-
-                    <th>
-                        Cabang
-                    </th>
-
-                    <th>
-                        Barang
-                    </th>
-
-                    <th>
-                        Jumlah
-                    </th>
-
-                    <th>
-                        Catatan
-                    </th>
-
-                    <th>
-                        Status
-                    </th>
-
-                    <th>
-                        Aksi
-                    </th>
-
-                </tr>
-
-            </thead>
-
-
-            <tbody>
-
-                ${
-                    rows ||
-                    `
-                    <tr>
-
-                        <td colspan="7">
-                            Belum ada permintaan.
-                        </td>
-
-                    </tr>
-                    `
-                }
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   DISTRIBUTION
-===================================================== */
-
-function distributionPage(){
-
-    const rows =
-        DATA.distributions
-        .map(
-            (distribution,index) => `
-
-            <tr>
-
-                <td>
-
-                    <b>
-                        ${distribution.id}
-                    </b>
-
-                    <br>
-
-                    <small class="muted">
-                        ${distribution.date}
-                    </small>
-
-                </td>
-
-
-                <td>
-                    ${distribution.branch}
-                </td>
-
-
-                <td>
-                    ${distribution.item}
-                </td>
-
-
-                <td>
-                    ${distribution.quantity}
-                </td>
-
-
-                <td>
-                    ${statusBadge(distribution.status)}
-                </td>
-
-
-                <td>
-
-                    ${
-                        DATA.role === "production" &&
-                        distribution.status === "pending"
-
-                        ?
-
-                        `
-                        <button
-                            class="
-                                action
-                                action-primary
-                            "
-
-                            onclick="
-                                sendDistribution(${index})
-                            "
-                        >
-
-                            Tandai Dikirim
-
-                        </button>
-                        `
-
-                        :
-
-                        DATA.role === "branch" &&
-                        distribution.status === "sent"
-
-                        ?
-
-                        `
-                        <button
-                            class="
-                                action
-                                action-primary
-                            "
-
-                            onclick="
-                                receiveDistribution(${index})
-                            "
-                        >
-
-                            Konfirmasi Terima
-
-                        </button>
-                        `
-
-                        :
-
-                        "—"
-                    }
-
-                </td>
-
-            </tr>
-
-            `
-        )
-        .join("");
-
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Distribusi Stok
-            </h1>
-
-            <p class="muted">
-                Pengiriman produk dari rumah produksi
-                ke masing-masing cabang.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="table-container">
-
-        <table>
-
-            <thead>
-
-                <tr>
-
-                    <th>
-                        Distribusi
-                    </th>
-
-                    <th>
-                        Cabang Tujuan
-                    </th>
-
-                    <th>
-                        Barang
-                    </th>
-
-                    <th>
-                        Jumlah
-                    </th>
-
-                    <th>
-                        Status
-                    </th>
-
-                    <th>
-                        Aksi
-                    </th>
-
-                </tr>
-
-            </thead>
-
-
-            <tbody>
-
-                ${rows}
-
-            </tbody>
-
-        </table>
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   BRANCH
-===================================================== */
-
-function branchesPage(){
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Data Cabang
-            </h1>
-
-            <p class="muted">
-                Informasi cabang yang terhubung
-                dengan sistem.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="cards">
-
-        ${
-            DATA.branches
-            .map(
-                (branch,index) => `
-
-                <div class="card">
-
-                    <div class="year">
-
-                        CABANG ${index + 1}
-
-                    </div>
-
-
-                    <h2>
-                        ${branch.name}
-                    </h2>
-
-
-                    <p class="muted">
-
-                        Stok saat ini:
-                        <b>
-                            ${branch.stock}
-                            unit
-                        </b>
-
-                    </p>
-
-
-                    <p class="muted">
-
-                        Batas minimum:
-                        ${branch.minimum}
-                        unit
-
-                    </p>
-
-                </div>
-
-                `
-            )
-            .join("")
-        }
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   PROFILE
-===================================================== */
-
-function profilePage(){
-
-    return `
-
-    <div class="page-heading">
-
-        <div>
-
-            <h1>
-                Profil Usaha
-            </h1>
-
-            <p class="muted">
-                Informasi publik pendukung branding usaha.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="panel">
-
-        <h2 style="font-family:Georgia,serif">
-
-            Bakso Seger Boyolali
-
-        </h2>
-
-
-        <p class="muted"
-           style="line-height:1.8">
-
-            Modul profil usaha digunakan untuk
-            menampilkan informasi usaha, menu,
-            cabang, lokasi, serta akses ulasan
-            Google.
-
-            Modul ini merupakan fitur pendukung
-            dan bukan fokus utama sistem monitoring
-            stok.
-
-        </p>
-
-
-        <button
-            class="btn"
-            onclick="showPublic()"
-        >
-
-            Buka Website Publik
-
-        </button>
-
-    </div>
-
-    `;
-
-}
-
-
-/* =====================================================
-   REQUEST MODAL
-===================================================== */
-
-function openRequestModal(){
-
-    document
-        .getElementById("modal")
-        .classList.remove("hidden");
-
-
-    document
-        .getElementById("modalBox")
-        .innerHTML = `
-
-        <h2 style="font-family:Georgia,serif">
-
-            Ajukan Permintaan Stok
-
-        </h2>
-
-
-        <p class="muted">
-
-            Masukkan kebutuhan stok yang
-            perlu dipenuhi oleh rumah produksi.
-
-        </p>
-
-
-        <div class="form-group">
-
-            <label>
-                Cabang
-            </label>
-
-            <select id="modalBranch">
-
-                <option>
-                    Ciputat
-                </option>
-
-                <option>
-                    Ciater
-                </option>
-
-                <option>
-                    Pengasinan
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-            <label>
-                Barang
-            </label>
-
-            <select id="modalItem">
-
-                <option>
-                    Bakso
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-            <label>
-                Jumlah
-            </label>
-
-            <input
-                id="modalQuantity"
-                type="number"
-                min="1"
-                value="20"
-            >
-
-        </div>
-
-
-        <div class="form-group">
-
-            <label>
-                Catatan
-            </label>
-
-            <textarea id="modalNote">Stok menipis</textarea>
-
-        </div>
-
-
-        <div class="modal-actions">
-
-            <button
-                class="btn-outline"
-                onclick="closeModal()"
-            >
-
-                Batal
-
-            </button>
-
-
-            <button
-                class="btn"
-                onclick="saveRequest()"
-            >
-
-                Simpan Permintaan
-
-            </button>
-
-        </div>
-
-        `;
-
-}
-
-
-function saveRequest(){
-
-    const branch =
-        document.getElementById("modalBranch")
-        .value;
-
-    const item =
-        document.getElementById("modalItem")
-        .value;
-
-    const quantity =
-        Number(
-            document
-            .getElementById("modalQuantity")
-            .value
-        );
-
-    const note =
-        document
-        .getElementById("modalNote")
-        .value;
-
-
-    DATA.requests.unshift({
-
-        id:
-            "REQ-" +
-            String(
-                DATA.requests.length + 1
-            ).padStart(3,"0"),
-
-        branch,
-
-        item,
-
-        quantity,
-
-        note,
-
-        status:"pending",
-
-        date:"21/08/2026"
-
-    });
-
-
-    closeModal();
-
-    notify(
-        "Permintaan stok berhasil dibuat."
-    );
-
-    renderApp();
-
-}
-
-
-/* =====================================================
-   APPROVAL
-===================================================== */
-
-function approveRequest(index){
-
-    const request =
-        DATA.requests[index];
-
-
-    request.status = "sent";
-
-
-    DATA.distributions.unshift({
-
-        id:
-            "DST-" +
-            String(
-                DATA.distributions.length + 1
-            ).padStart(3,"0"),
-
-        branch:request.branch,
-
-        item:request.item,
-
-        quantity:request.quantity,
-
-        status:"pending",
-
-        date:"21/08/2026"
-
-    });
-
-
-    notify(
-        "Permintaan diteruskan ke rumah produksi."
-    );
-
-
-    renderApp();
-
-}
-
-
-/* =====================================================
-   DISTRIBUTION
-===================================================== */
-
-function sendDistribution(index){
-
-    DATA.distributions[index].status =
-        "sent";
-
-
-    notify(
-        "Distribusi ditandai sebagai dikirim."
-    );
-
-
-    renderApp();
-
-}
-
-
-function receiveDistribution(index){
-
-    const distribution =
-        DATA.distributions[index];
-
-
-    distribution.status =
-        "done";
-
-
-    const branch =
-        DATA.branches.find(
-            item =>
-            item.name ===
-            distribution.branch
-        );
-
-
-    if(branch){
-
-        branch.stock +=
-            distribution.quantity;
-
-    }
-
-
-    notify(
-        "Penerimaan dikonfirmasi dan stok diperbarui."
-    );
-
-
-    renderApp();
-
-}
-
-
-/* =====================================================
-   MODAL / TOAST
-===================================================== */
-
-function closeModal(){
-
-    document
-        .getElementById("modal")
-        .classList.add("hidden");
-
-}
-
-
-function notify(message){
-
-    const toast =
-        document.getElementById("toast");
-
-
-    toast.textContent =
-        message;
-
-
-    toast.classList.remove(
-        "hidden"
-    );
-
-
-    setTimeout(
-        () => {
-
-            toast.classList.add(
-                "hidden"
-            );
-
-        },
-
-        2500
-    );
-
-}
-
-
-document
-    .getElementById("modal")
-    .addEventListener(
-        "click",
-        function(event){
-
-            if(event.target === this){
-
-                closeModal();
-
-            }
-
-        }
-    );
-
+  /* ---------- MENU + KERANJANG ---------- */
+  var cart = {};   // indeks menu -> jumlah
+  var cats = ["Semua"]; C.menu.forEach(function(m){ if (cats.indexOf(m.k) < 0) cats.push(m.k); });
+  var curCat = "Semua";
+  var tabsEl = $("#menu-tabs"), listEl = $("#menu-list");
+
+  function renderTabs(){
+    tabsEl.innerHTML = cats.map(function(c){
+      return '<button class="tab" role="tab" type="button" aria-selected="'+(c===curCat)+'" data-c="'+esc(c)+'">'+esc(c)+'</button>';
+    }).join("");
+  }
+  function ctrl(i){
+    var q = cart[i] || 0;
+    if (!q) return '<button class="btn small" type="button" data-add="'+i+'" aria-label="Tambah '+esc(C.menu[i].n)+' ke pesanan">Tambah +</button>';
+    return '<span class="step"><button type="button" data-dec="'+i+'" aria-label="Kurangi '+esc(C.menu[i].n)+'">−</button><output aria-live="polite">'+q+'</output><button type="button" data-add="'+i+'" aria-label="Tambah '+esc(C.menu[i].n)+'">+</button></span>';
+  }
+  function renderMenu(){
+    listEl.innerHTML = C.menu.map(function(m, i){
+      if (curCat !== "Semua" && m.k !== curCat) return "";
+      return '<li class="item"><h3>'+esc(m.n)+(m.p ? ' <span class="price">'+rp(m.p)+'</span>' : '')+'</h3><p>'+esc(m.d)+'</p><div class="act" data-i="'+i+'">'+ctrl(i)+'</div></li>';
+    }).join("");
+  }
+  tabsEl.addEventListener("click", function(e){
+    var b = e.target.closest("[data-c]"); if (!b) return;
+    curCat = b.dataset.c; renderTabs(); renderMenu();
+  });
+  function total(){ return Object.keys(cart).reduce(function(s,k){ return s + cart[k]; }, 0); }
+  function sync(){
+    var t = total();
+    $("#cart-count").textContent = t + " item";
+    $("#cartbar").classList.toggle("show", t > 0);
+    document.querySelectorAll(".act").forEach(function(el){ el.innerHTML = ctrl(+el.dataset.i); });
+    renderCart();
+  }
+  function change(i, d){
+    cart[i] = Math.max(0, (cart[i] || 0) + d);
+    if (!cart[i]) delete cart[i];
+    sync();
+  }
+  document.addEventListener("click", function(e){
+    var a = e.target.closest("[data-add]"), d = e.target.closest("[data-dec]");
+    if (a) { var f = a.closest(".item"); change(+a.dataset.add, 1); var nb = document.querySelector('[data-i="'+a.dataset.add+'"] [data-add]'); if (nb && !a.closest("dialog")) nb.focus(); }
+    if (d) { change(+d.dataset.dec, -1); }
+  });
+
+  /* ---------- DIALOG PESANAN ---------- */
+  var dlg = $("#dlg"), lines = $("#cart-lines");
+  function renderCart(){
+    var ks = Object.keys(cart);
+    if (!ks.length) { lines.innerHTML = '<li class="empty">Belum ada menu yang dipilih. Tutup jendela ini dan tekan Tambah pada menu.</li>'; return; }
+    lines.innerHTML = ks.map(function(k){
+      return '<li><span>'+esc(C.menu[k].n)+'</span><span class="step"><button type="button" data-dec="'+k+'" aria-label="Kurangi '+esc(C.menu[k].n)+'">−</button><output>'+cart[k]+'</output><button type="button" data-add="'+k+'" aria-label="Tambah '+esc(C.menu[k].n)+'">+</button></span></li>';
+    }).join("");
+  }
+  $("#f-cabang").innerHTML = C.cabang.map(function(b){ return "<option>"+esc(b.nama)+"</option>"; }).join("");
+  $("#open-cart").addEventListener("click", function(){ renderCart(); $("#err").textContent = ""; dlg.showModal(); });
+  $("#close-dlg").addEventListener("click", function(){ dlg.close(); });
+  dlg.addEventListener("click", function(e){ if (e.target === dlg) dlg.close(); });
+  $("#order-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var f = e.target, nama = f.nama.value.trim(), err = $("#err");
+    if (!total()) { err.textContent = "Pilih minimal satu menu dulu."; return; }
+    if (!nama) { err.textContent = "Isi nama kamu supaya admin tahu siapa yang memesan."; f.nama.focus(); return; }
+    var items = Object.keys(cart).map(function(k){ return "- " + cart[k] + "x " + C.menu[k].n; }).join("\n");
+    var msg = "Halo admin Bakso Seger Boyolali, saya mau pesan:\n" + items +
+      "\n\nNama: " + nama + "\nCabang: " + f.cabang.value + "\nCara menerima: " + f.tipe.value +
+      (f.catatan.value.trim() ? "\nCatatan: " + f.catatan.value.trim() : "") + "\n\nTerima kasih.";
+    window.open(waLink(msg), "_blank", "noopener");
+  });
+
+  renderTabs(); renderMenu(); renderCart();
+
+  /* ---------- CABANG ---------- */
+  var bt = $("#branch-tabs"), bi = $("#branch-info"), bm = $("#branch-map"), curB = 0;
+  var tabHtml = C.cabang.map(function(b, i){ return '<button type="button" role="tab" data-b="'+i+'" aria-selected="'+(i===0)+'">'+esc(b.nama)+'</button>'; }).join("");
+  bt.innerHTML = tabHtml;
+  function showBranch(i){
+    curB = i; var b = C.cabang[i];
+    bt.querySelectorAll("button").forEach(function(x, n){ x.setAttribute("aria-selected", n===i); });
+    bi.innerHTML = '<dl><div><dt>Alamat</dt><dd>'+todo(b.alamat)+(b.wilayah ? '<br>'+esc(b.wilayah) : '')+'</dd></div>' +
+      '<div><dt>Jam buka</dt><dd>'+todo(b.jam)+'</dd></div>' +
+      '<div><dt>WhatsApp Bisnis</dt><dd>'+esc(C.waTampil)+'</dd></div></dl>' +
+      '<div class="acts"><a class="btn red" target="_blank" rel="noopener" href="'+mapsRoute(b.mapQuery)+'">Rute ke '+esc(b.nama)+'</a>' +
+      '<a class="btn" target="_blank" rel="noopener" href="'+waLink("Halo admin, saya mau pesan untuk cabang "+b.nama+".")+'">Chat cabang ini</a></div>';
+    bm.innerHTML = '<iframe title="Peta Bakso Seger Boyolali '+esc(b.nama)+'" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q='+encodeURIComponent(b.mapQuery)+'&output=embed"></iframe>';
+    var sel = $("#f-cabang"); if (sel) sel.value = b.nama;
+  }
+  bt.addEventListener("click", function(e){ var x = e.target.closest("[data-b]"); if (x) showBranch(+x.dataset.b); });
+  showBranch(0);
+  $("#f-branches").innerHTML = C.cabang.map(function(b){ return "<span><b>"+esc(b.nama)+"</b><br>"+todo(b.alamat)+"</span>"; }).join("");
+
+  /* ---------- QR ---------- */
+  var qt = $("#qr-tabs");
+  qt.innerHTML = tabHtml.replace(/data-b=/g, "data-q=");
+  function drawQr(el, url){
+    el.innerHTML = "";
+    if (typeof qrcode !== "function") { el.innerHTML = '<span>Kode QR belum bisa dimuat. Pakai tautan di bawah.</span>'; return; }
+    var q = qrcode(0, "M"); q.addData(url); q.make();
+    try { el.innerHTML = q.createSvgTag({ scalable: true, margin: 0 }); }
+    catch(e){ el.innerHTML = q.createImgTag(6, 0); }
+  }
+  function showQr(i){
+    var b = C.cabang[i];
+    qt.querySelectorAll("button").forEach(function(x, n){ x.setAttribute("aria-selected", n===i); });
+    drawQr($("#qr-review"), reviewUrl(b)); drawQr($("#qr-maps"), mapsUrl(b));
+    $("#qr-review-link").href = reviewUrl(b); $("#qr-maps-link").href = mapsUrl(b);
+  }
+  qt.addEventListener("click", function(e){ var x = e.target.closest("[data-q]"); if (x) showQr(+x.dataset.q); });
+  window.addEventListener("load", function(){ showQr(0); });
+  $("#qr-review-link").href = reviewUrl(C.cabang[0]); $("#qr-maps-link").href = mapsUrl(C.cabang[0]);
+
+  /* ---------- SCHEMA.ORG (dibuat dari PENGATURAN) ---------- */
+  var graph = C.cabang.map(function(b){
+    var o = { "@type": "Restaurant", "name": "Bakso Seger Boyolali " + b.nama, "servesCuisine": "Bakso", "url": C.domain + "/",
+      "telephone": "+" + C.wa, "email": C.email, "hasMenu": C.domain + "/#menu", "priceRange": "$",
+      "parentOrganization": { "@type": "Organization", "name": "Bakso Seger Boyolali" } };
+    if (!isTodo(b.alamat)) o.address = { "@type": "PostalAddress", "streetAddress": b.alamat, "addressLocality": b.wilayah || b.nama, "addressCountry": "ID" };
+    else o.areaServed = b.nama;
+    return o;
+  });
+  var faqs = [].map.call(document.querySelectorAll(".faq details"), function(d){
+    return { "@type": "Question", "name": d.querySelector("summary").textContent, "acceptedAnswer": { "@type": "Answer", "text": d.querySelector("p").textContent } };
+  });
+  graph.push({ "@type": "FAQPage", "mainEntity": faqs });
+  var s = document.createElement("script"); s.type = "application/ld+json";
+  s.textContent = JSON.stringify({ "@context": "https://schema.org", "@graph": graph });
+  document.head.appendChild(s);
+})();
 </script>
 </body>
 </html>
